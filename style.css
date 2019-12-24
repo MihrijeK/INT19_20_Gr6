@@ -252,6 +252,9 @@ header p a:hover{
   height:50px;
   background-color: #161626;
 }
+.align1{
+text-align: right;
+}
 .copyrights h3{
   margin:0;
   color:#3b3a4a;
