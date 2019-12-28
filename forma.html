@@ -1,12 +1,24 @@
 <!DOCTYPE html>
+<html>
 <head>
     <title>Login in our website</title>
-    <link href="css\stilizimiForma.css" rel="stylesheet"/>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
-        $(".login-btn").click(function(){
-        $("#forma").css({'margin-left':'-466px'});
-        });
-    </script>
+    <link href="css\stilizimiForma.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script>
+			$(document).ready(function(){
+                $("#forma2").hide();
+				$("#login").click(function(){
+					$("#forma").show('slow');
+					$("#forma2").hide();
+				});
+				$("#signin").click(function(){
+					$("#forma2").show('slow');
+					$("#forma").hide();
+				});
+			});
+	
+	</script>
+    
 
 </head>
 <body>
@@ -15,41 +27,41 @@
     </div>
     <div class="form-body">
         <div class="butonat">
-                <button type="button" class="login-btn">Log In</button>
-                <button type="button" class="signin-btn">Sign In</button>
+                <button type="button" id="login" autofocus>Log In</button>
+                <button type="button" id="signin" >Sign In</button>
         </div>
         <div id="forma">
             <form class="login">
                 <p>
-                <input type="text" name="username" id="user-pass" placeholder="Enter Username">
+                <input type="text" name="username" id="user-pass" placeholder="Enter Username" required>
                 </p>
                 <p>
-                <input type="password" name="password" id="user-pass" placeholder="Enter Password">
+                <input type="password" name="password" id="user-pass" placeholder="Enter Password" required>
                 </p>
                 <p>
                     <input type="checkbox" name="check" id="left" checked><span>Remember me</span>
                 </p>
                 <p>
-                    <button type="button" id="btn" name="Login">Log In</button>
+                    <button type="button" id="btn" name="Login" formaction="" onclick="window.location.href='Projekti.html'">Log In</button>
                 </p>
             </form>
         </div>
         <div id="forma2">
-            <form class="login">
+            <form class="signin">
                 <p>
-                <input type="text" name="username" id="user-pass" placeholder="Enter Username">
+                <input type="text" name="username" id="user-pass" placeholder="Enter Username" required>
                 </p>
                 <p>
-                <input type="email" name="email" id="user-pass" placeholder="Enter Email">
+                <input type="email" name="email" id="user-pass" placeholder="Enter Email" required>
                 </p>
                 <p>
-                <input type="password" name="password" id="user-pass" placeholder="Enter Password">
+                <input type="password" name="password" id="user-pass" placeholder="Enter Password" required>
                 </p>
                 <p>
                     <input type="checkbox" name="check" id="left" checked><span>I agree to the terms and conditions</span>
                 </p>
                 <p>
-                    <button type="button" id="btn" name="Login">Sign In</button>
+                    <button type="button" id="btn" name="Login" formaction="" onclick="window.location.href='Projekti.html'">Sign In</button>
                 </p>
             </form>
         </div>
