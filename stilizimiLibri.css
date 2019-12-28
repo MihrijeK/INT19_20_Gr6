@@ -1,180 +1,169 @@
-*{
-    margin:0;
-    box-sizing: border-box;
+* {
+	margin: 0;
+	box-sizing: border-box;
 }
-#head{
-    position:sticky;
-    margin-top:0;
-    width:100%;
-    height:60px;
-    background-color: #161626;
-	z-index: 999;
+#head {
+	position: sticky;
+	margin-top: 0;
+	width: 100%;
+	height: 60px;
+	background-color: #161626;
 }
-header ul li{
-    display:inline-block;
-    list-style: none;
+header ul li {
+	display: inline-block;
+	list-style: none;
 }
-header ul li a{
-	margin-right:-5px;
-	
+header ul li a {
+	margin-right: -5px;
 }
-header ul li a{
-	padding-bottom:15px;
+header ul li a {
+	padding-bottom: 15px;
 }
-#content{
-    width:75%;
-    
-    display:block;
-    float:left;
-    background-color: #c0c0c8;
+#content {
+	width: 75%;
+	display: block;
+	float: left;
+	background-color: #c0c0c8;
 }
-#sidebar{
-    width:20%;
-    height:100%;
-    display:block;
-    float:right;
-    background-color: #f76c6c;
-    box-shadow: 0 0 20px black;
+#sidebar {
+	width: 20%;
+	height: 100%;
+	display: block;
+	float: right;
+	background-color: #f76c6c;
+	box-shadow: 0 0 20px black;
 }
-#libri{
+#libri {
 	width: 50%;
 	display: block;
 	float: left;
 }
-#permbajtja{
-	width:50%;
+#permbajtja {
+	width: 50%;
 	display: block;
-	float:right;
+	float: right;
 	margin-top: 80px;
 	text-align: center;
 }
 .checked {
-  color: orange;
+	color: orange;
 }
-.Search{
-	margin-left:-10px;
+.Search {
+	margin-left: -10px;
 	display: block;
 	float: right;
-	width:20%;
+	width: 20%;
 	vertical-align: middle;
 }
-#textfield{
-	margin-top:16px;
+#textfield {
+	margin-top: 16px;
 }
-#header-button{
+#header-button {
 	vertical-align: middle;
 }
-.but{
-	width:30%;
+.but {
+	width: 50%;
 	display: block;
 	float: left;
 	text-align: center;
 }
-#cmimi{
-	
+#cmimi {
 	border-radius: 5px;
 	width: 180px;
-	height:70px;
+	height: 70px;
 	background-color: #f76c6c;
-	color:white;
-	font-size: 24px;
-	
-}
-#blej
-{
-	border-radius: 5px;
-	width: 180px;
-	height:70px;
-	background-color: #f76c6c;
-	color:white;
-	font-size: 24px;
-}
-#lexo{
-	border-radius: 5px;
-	width: 180px;
-	height:70px;
-	background-color: #f76c6c;
-	color:white;
+	color: white;
 	font-size: 24px;
 }
 #blej {
-   
-    cursor: pointer;
-    text-align: center;
+	border-radius: 5px;
+	width: 180px;
+	height: 70px;
+	background-color: #f76c6c;
+	color: white;
+	font-size: 24px;
+}
+#lexo {
+	border-radius: 5px;
+	width: 180px;
+	height: 70px;
+	background-color: #f76c6c;
+	color: white;
+	font-size: 24px;
+}
+#blej {
+	cursor: pointer;
+	text-align: center;
 	transition: all 0.5s;
 }
-
 #blej span {
-    cursor: pointer;
-    display: inline-block;
-    position: relative;
-    transition: 0.5s;
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
 }
 #blej span:after {
-    content: '\00bb';
-    position: absolute;
-    opacity: 0;
-    top: 0;
-    right: -20px;
-    transition: 0.5s;
+	content: '\00bb';
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: -20px;
+	transition: 0.5s;
 }
 #blej:hover span {
-    padding-right: 20px;
+	padding-right: 20px;
 	font-weight: bold;
 }
 #blej:hover span:after {
-    opacity: 1;
-    right: 0;
+	opacity: 1;
+	right: 0;
 }
 #lexo {
-   
-    cursor: pointer;
-    text-align: center;
+	cursor: pointer;
+	text-align: center;
 	transition: all 0.5s;
 }
-
 #lexo span {
-    cursor: pointer;
-    display: inline-block;
-    position: relative;
-    transition: 0.5s;
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
 }
 #lexo span:after {
-    content: '\00bb';
-    position: absolute;
-    opacity: 0;
-    top: 0;
-    right: -20px;
-    transition: 0.5s;
+	content: '\00bb';
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: -20px;
+	transition: 0.5s;
 }
 #lexo:hover span {
-    padding-right: 20px;
+	padding-right: 20px;
 	font-weight: bold;
 }
 #lexo:hover span:after {
-    opacity: 1;
-    right: 0;
+	opacity: 1;
+	right: 0;
 }
 .center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
 }
-table tr{
+table tr {
 	border: 1px solid black;
 }
-.libri{
+.libri {
 	display: block;
 	width: 33%;
 	float: left;
-	
 }
-ul li a{
-	color:#4B6D72;
+ul li a {
+	color: #4B6D72;
 	text-decoration: none;
 }
-ul li a{
-	color:#4B6D72;
+ul li a {
+	color: #4B6D72;
 	text-decoration: none;
 }
