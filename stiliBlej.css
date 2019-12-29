@@ -48,3 +48,15 @@ body{
   font-size: 16px;
   color: #555555;
 }
+.card-grp{
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-item{
+  width: 48%;
+}
+
+.space{
+  margin-bottom: 20px;
+}
