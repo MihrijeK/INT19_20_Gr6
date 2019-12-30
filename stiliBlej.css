@@ -60,3 +60,15 @@ body{
 .space{
   margin-bottom: 20px;
 }
+.icon-relative{
+  position: relative;
+}
+
+.icon-relative .fas,
+.icon-relative .far{
+  position: absolute;
+  bottom: 12px;
+  left: 15px;
+  font-size: 20px;
+  color: lightpink;
+}
