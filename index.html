@@ -3,7 +3,7 @@
 <html>
 <head>
 <title>Prova</title>
-<link href="style.css" rel="stylesheet">
+<link href="css\stilizimi.css" rel="stylesheet">
 </head>
 <body>
 	<div style="margin: 0;background-color:darkgray;height:600px">
@@ -14,7 +14,7 @@
         <h1 class="contominant">CONTOMINANT</h1>
         <p class="psd">Free PSD website template</p>
       </div>
-      <div class="icon-band" style="float: right">
+      <div class="icon-band">
         <ul>
           <li> <a href="https://www.linkedin.com/"> <img id="image1" class="img-fluid" src="fotot\linkedin-icon-dark.png" onmouseover="setNewImage1();" onmouseout="setOldImage1()" alt=""/> </a> </li>
           <li> <a href="https://twitter.com/"> <img id="image2" class="img-fluid" src="fotot\twitter-icon-dark.png" onmouseover="setNewImage2()" onmouseout="setOldImage2()" alt=""/> </a> </li>
@@ -22,21 +22,21 @@
           <li> <a href="https://plus.google.com/"> <img id="image4" class="img-fluid" src="fotot\googleplus-icon-dark.png" onmouseover="setNewImage4()" onmouseout="setOldImage4()" alt=""/> </a> </li>
         </ul>
 		  <br/>
-        <p style="font-size: 10px"> <a href="#">Sign Up |</a> <a href="#">Log In |</a> <a href="#">RSS Feeds |</a> <a href="#">Archived News</a> </p>
+        <p style="margin-right:10px"> <a href="#">Sign Up</a> | <a href="#">Log In</a> | <a href="#">RSS Feeds</a> | <a href="#">Archived News</a> </p>
       </div>
     </div>
   </div>
   <div class="navi">
 	<ul class="navbar">
-	  <li><a href="#">Home Page</a></li>
-	  <li><a href="#">Style Demo</a></li>
-	  <li><a href="#">Full Width</a></li>
-	  <li><a href="#">Portfolio</a></li>
-	  <li><a href="#">Gallery</a></li>
-	  <li><a href="#">Dropdown</a></li>
-	  <div style="float:right;margin-top:17px;margin-right:20px">
+	  <li><a href="#">HOME PAGE</a></li>
+	  <li><a href="#">STYLE DEMO</a></li>
+	  <li><a href="#">FULL WIDTH</a></li>
+	  <li><a href="#">PORTOFOLIO</a></li>
+	  <li><a href="#">GALLERY</a></li>
+	  <li><a href="#">DROPDOWN</a></li>
+	  <div style="float:right;margin-top:12px;margin-right:20px">
         <input type="text" name="textfield" id="textfield" placeholder="Search our website...">
-		<label for="textfield">Search</label>
+		<button type="button" id="header-button">Search</button>
 		  </div>
     </ul>
 	
@@ -52,7 +52,7 @@
   <!-- Full-width images with number and caption text -->
   <div class="mySlides fade">
     <div class="numbertext">1 / 4</div>
-    <img src="fotot/spring.jpg" style="width:100%" alt=""/>
+    <img src="fotot/spring.jpg" style="width:880px;height:360px;" alt=""/>
     <div class="text">Caption Text</div>
   </div>
 
@@ -159,8 +159,8 @@
 		<div class="inner-footer">
 			<h3>CONTACT DETAILS</h3>
 			<p>Conavllisituso vestas mus pellentum aenean sapibulum in aliqun volut pat integest nulla.</p>
-			<p>Tel:<a href="#" style="color:limegreen;text-decoration: none;">xxx xxxxxx</a></br>
-			Fax:<a href="#" style="color:limegreen;text-decoration: none;">xxx xxxxxx</a></br>
+			<p>Tel:<a href="#" style="color:#f76c6c;text-decoration: none;">xxx xxxxxx</a></br>
+			Fax:<a href="#" style="color:#f76c6c;text-decoration: none;">xxx xxxxxx</a></br>
 			Email:contact@bllablla.com</p>	
 		</div>
 		<div class="inner-footer">
@@ -176,22 +176,20 @@
 			<p>
 				Posted by Admin sdhfgdjhf vestibuum egestibulum eu justo convallis ague estas aenean elit intesque sed fecilispede estibulum.
 			</p>
-			<p style="text-align:right;"><a href="#" style="text-decoration: none;color:chartreuse">Read More>></a></p>
+			<p style="text-align:right;"><a href="#" style="text-decoration: none;color:#f76c6c">Read More>></a></p>
 		</div>
 		<div class="inner-footer">
 			<h3>GRAB OUR NEWSLETTER</h3>
-				<input type="text" name="Emri" placeholder="Name" id="footer-form">
-				<input type="text" name="Email" placeholder="Email" id="footer-form">
+				<input type="text" name="Emri" placeholder="Name" id="footer-form" style="border:1px solid #f76c6c">
+				<input type="text" name="Email" placeholder="Email" id="footer-form" style="border:1px solid #f76c6c">
 				<button type="button" name="butoni" id="footer-button">SUBMIT</button>
 		</div>
+		</div>
 		<div class="copyrights">
-			<p>Copyright &copy 2019 - All Rights Reserved - Domain Name</p>
-			<p class="align1">Templete by OS Templete </p>
-
+			<h3>Copyrights &copy 2019 All Rights Reserved</h3>
 		</div>
 	</div>		  
-			  
-			  
+  
 <script>
             function setOldImage1(){
                 document.getElementById("image1").src="fotot/linkedin-icon-dark.png";
