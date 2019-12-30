@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Libri</title>
+		<title>Libri</title>
+		<meta charset="utf-8"/>
         <link href="css\stilizimi.css" rel="stylesheet"/>
 		<link href="css\stilizimiLibri.css" rel="stylesheet"/>
-		<link href="../Projekti per Internet/all.min.css" rel="stylesheet">
+		<link href="all.min.css" rel="stylesheet">
         <style>
             .navbar li a{
                 padding-top:0;
@@ -21,30 +22,65 @@
 				vertical-align: middle;
 			}
 			
-        </style>
+		</style>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script>
+			$(document).ready(function(){
+				$("#shop-view").hide();
+				$("#account-view").hide();
+				$("#shop").click(function(){
+					if($("#shop-view").is(":hidden")){
+						$("#shop-view").show('slow');
+						$("#account-view").hide('slow');
+					}
+					else if($("#shop-view").is(":visible")){
+						$("#shop-view").hide('slow');
+					}
+				});
+
+				$("#account").click(function(){
+					if($("#account-view").is(":hidden")){
+						$("#account-view").show('slow');
+						$("#shop-view").hide('slow');
+					}
+					else if($("#account-view").is(":visible")){
+						$("#account-view").hide('slow');
+					}
+				})
+			})
+		</script>
 
     </head>
     <body>
         <header id="head" style="position: fixed">
             <ul class="navbar">
-                <li><a href="Projekti.html">HOME PAGE</a></li>
-                <li><a href="#">STYLE DEMO</a></li>
-                <li><a href="#">FULL WIDTH</a></li>
-                <li><a href="#">PORTOFOLIO</a></li>
+                <li><a href="Projekti.html">BALLINA</a></li>
+                <li><a href="#">NGJARJET</a></li>
+                <li><a href="#">GAZETA</a></li>
                 <li><a href="#">GALLERY</a></li>
-                <li><a href="#">DROPDOWN</a></li>
-                
+                <li><a href="#">TË TJERA</a></li>
+				
+				<button class="shop-cart" id="shop"><span style="color: antiquewhite;vertical-align: middle;"><i class="fas fa-shopping-cart center"></i></span></button>
+				<button class="shop-cart" id="account" style="right:370px;"><span style="color: antiquewhite;"><i class="fas fa-user-alt"></i></span></button>
                 <div class="Search">
                   <input type="text" name="textfield" id="textfield" placeholder="Search our website...">
-                  <button align="right" type="button" id="header-button">Search</button>
+                  <button type="button" id="header-button">Search</button>
                 </div>
-                
               </ul>
         </header>
 		<br/>
 		<br/>
-		<br/>
-    <div id="content" style="width: 100%">
+		
+	<div class="content" style="width: 100%">
+		<div class="shop-view" id="shop-view"><p>Numri i librave te blere:</p>
+							   <button type="button" id="buy">Blej</button></div>
+		<div class="account-view" id="account-view">
+			<ul>
+				<li><i class="fas fa-user-alt"></i>Account</li>
+				<li><i class="fas fa-sign-out-alt"></i>Log out</li>
+				<li><i class="fas fa-book-open"></i>MyLibrary</li>
+			</ul>
+		</div>
 	  <div style="display: inline">
             <div style="display: block;width:70%;float: left">
 				<div id="libri">
@@ -72,7 +108,7 @@
             <span class="fa fa-star checked"></span>
 
             <div id="butonat" style="width:70%">
-                <div class="but"><button id="blej"><span>Blej</span></button></div>
+                <div class="but"><button id="blej"><span>Add to cart</span></button></div>
                 <div class="but"><button id="lexo"><span>Lexo</span></button></div>
                   
             </div>
@@ -152,45 +188,43 @@
 <br/>
 <br/>
 <br/>
-
-
-        <footer>
-			<div class="footer">
-		<div class="inner-footer">
-			<h3>CONTACT DETAILS</h3>
-			<p>Conavllisituso vestas mus pellentum aenean sapibulum in aliqun volut pat integest nulla.</p>
-			<p>Tel:<a href="#" style="color:#f76c6c;text-decoration: none;">xxx xxxxxx</a></br>
-			Fax:<a href="#" style="color:#f76c6c;text-decoration: none;">xxx xxxxxx</a></br>
-			Email:contact@bllablla.com</p>	
-		</div>
-		<div class="inner-footer">
-			<h3>QUICK LINKS</h3>
-			<div class="footer-links"><a href="#">Link text here</a></br></div>
-			<div class="footer-links"><a href="#">Link text here</a></br></div>
-			<div class="footer-links"><a href="#">Link text here</a></br></div>
-			<div class="footer-links"><a href="#">Link text here</a></br></div>
-		</div>
-		<div class="inner-footer">
-			<h3>FROM THE BLOG</h3>
-			<p><b>Blog Post Title</b></p>
-			<p>
-				Posted by Admin sdhfgdjhf vestibuum egestibulum eu justo convallis ague estas aenean elit intesque sed fecilispede estibulum.
-			</p>
-			<p style="text-align:right;"><a href="#" style="text-decoration: none;color:#f76c6c">Read More>></a></p>
-		</div>
-		<div class="inner-footer">
-			<h3>GRAB OUR NEWSLETTER</h3>
-				<input type="text" name="Emri" placeholder="Name" id="footer-form" style="border:1px solid #f76c6c">
-				<input type="text" name="Email" placeholder="Email" id="footer-form" style="border:1px solid #f76c6c">
-				<button type="button" name="butoni" id="footer-button">SUBMIT</button>
-		</div>
-		</div>
-<div class="copyrights">
-			<h3>Copyrights &copy 2019 All Rights Reserved</h3>
-		</div>
-	</div>
-
-        </footer>
-<script src="../Projekti per Internet/all.min.js"></script>
+		<footer>
+			<div class="footer" style="padding:40px 0;">
+				<div class="inner-footer">
+					<h3>CONTACT DETAILS</h3>
+					<p>Conavllisituso vestas mus pellentum aenean sapibulum in aliqun volut pat integest nulla.</p>
+					<p>Tel:<a href="#" style="color:#f76c6c;text-decoration: none;">xxx xxxxxx</a></br>
+					Fax:<a href="#" style="color:#f76c6c;text-decoration: none;">xxx xxxxxx</a></br>
+					Email:contact@bllablla.com</p>	
+				</div>
+				<div class="inner-footer">
+					<h3>QUICK LINKS</h3>
+					<div class="footer-links"><a href="#">Link text here</a></br></div>
+					<div class="footer-links"><a href="#">Link text here</a></br></div>
+					<div class="footer-links"><a href="#">Link text here</a></br></div>
+					<div class="footer-links"><a href="#">Link text here</a></br></div>
+				</div>
+				<div class="inner-footer">
+					<h3>FROM THE BLOG</h3>
+					<p><b>Blog Post Title</b></p>
+					<p>
+						Posted by Admin sdhfgdjhf vestibuum egestibulum eu justo convallis ague estas aenean elit intesque sed fecilispede estibulum.
+					</p>
+					<p style="text-align:right;"><a href="#" style="text-decoration: none;color:#f76c6c">Read More>></a></p>
+				</div>
+				<div class="inner-footer">
+					<h3>GRAB OUR NEWSLETTER</h3>
+						<input type="text" name="Emri" placeholder="Name" id="footer-form" style="border:1px solid #f76c6c">
+						<input type="text" name="Email" placeholder="Email" id="footer-form" style="border:1px solid #f76c6c">
+						<button type="button" name="butoni" id="footer-button">SUBMIT</button>
+				</div>
+				</div>
+				<div class="copyrights">
+					<h3>Copyrights &copy 2019 All Rights Reserved</h3>
+				</div>
+			</div>
+		</footer>
+<script src="../Projekti per Internet/all.min.js">
+</script>
 </body>
 </html>
