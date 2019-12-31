@@ -72,3 +72,13 @@ body{
   font-size: 20px;
   color: lightpink;
 }
+.btn{
+  margin-top: 40px;
+  background: #2196F3;
+  padding: 12px;
+  text-align: center;
+  color: #f8f8f8;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
