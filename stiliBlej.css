@@ -95,3 +95,15 @@ body{
   line-height: 85px;
 }
 
+.payment-logo:before{
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 90px;
+  height: 90px;
+  background: #2196F3;
+  border-radius: 50%;
+}
+
+
