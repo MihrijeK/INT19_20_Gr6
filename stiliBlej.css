@@ -115,5 +115,12 @@ body{
   .card-grp{
     flex-direction: column;
   }
-
+.card-item{
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .btn{
+    margin-top: 20px;
+  }
+}
 
