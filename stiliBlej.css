@@ -105,5 +105,11 @@ body{
   background: #2196F3;
   border-radius: 50%;
 }
+.payment-logo p{
+  position: relative;
+  color: #f8f8f8;
+  font-family: 'Baloo Bhaijaan', cursive;
+  font-size: 58px;
+}
 
 
