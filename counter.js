@@ -25,3 +25,6 @@ function paid()
 {
   document.getElementById("pay").innerHTML="PAID!";
 }
+function teksti(){
+  document.getElementById("result").innerHTML="Numri i librave në shporte:"+localStorage.clickcount;
+}
