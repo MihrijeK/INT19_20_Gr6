@@ -8,7 +8,7 @@
 }
 
 body{
-  background-image: linear-gradient(120deg,#3498db,#8e44ad);
+  background-image: linear-gradient(120deg,#f76c6c,#8e44ad);
   margin: 0 10px;
 }
 
@@ -72,14 +72,15 @@ body{
   font-size: 20px;
   color: lightpink;
 }
-.btn{
+#pay{
   margin-top: 40px;
-  background: #2196F3;
+  background: #f76c6c;
   padding: 12px;
   text-align: center;
   color: #f8f8f8;
   border-radius: 5px;
   cursor: pointer;
+  outline:none;
 }
 .payment-logo{
   position: absolute;
@@ -102,7 +103,7 @@ body{
   left: 5px;
   width: 90px;
   height: 90px;
-  background: #2196F3;
+  background: #f76c6c;
   border-radius: 50%;
 }
 .payment-logo p{
