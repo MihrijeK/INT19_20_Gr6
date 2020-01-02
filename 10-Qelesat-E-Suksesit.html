@@ -26,4 +26,92 @@
 			}
 			
 		</style>
+	     </head>
+    <body>
+        <header id="head" style="position: fixed">
+            <ul class="navbar">
+                <li><a href="Projekti.html">BALLINA</a></li>
+                <li><a href="#">NGJARJET</a></li>
+                <li><a href="#">GAZETA</a></li>
+                <li><a href="#">GALLERY</a></li>
+                <li><a href="#">TË TJERA</a></li>
+				
+				<button class="shop-cart" id="shop" onclick="teksti()"><span style="color: antiquewhite;vertical-align: middle;"><i class="fas fa-shopping-cart center"></i></span></button>
+				<button class="shop-cart" id="account" style="right:370px;"><span style="color: antiquewhite;"><i class="fas fa-user-alt"></i></span></button>
+                <div class="Search">
+                  <input type="text" name="textfield" id="textfield" placeholder="Search our website...">
+                  <button type="button" id="header-button">Search</button>
+                </div>
+              </ul>
+        </header>
+		<br/>
+		<br/>
+		
+	<div class="content">
+		<div class="shop-view" id="shop-view"><div id="result"></div>
+							   <button type="button" id="buy" onclick="resetCount(),window.location.href='Blej.html'">Blej</button></div>
+		<div class="account-view" id="account-view">
+			<ul>
+				<li><i class="fas fa-user-alt"></i>Account</li>
+				<li><i class="fas fa-sign-out-alt"></i>Log out</li>
+				<li><i class="fas fa-book-open"></i>MyLibrary</li>
+			</ul>
+		</div>
+	  <div style="display: inline">
+            <div style="display: block;width:70%;float: left">
+				<div id="libri">
+				<img src="fotot/10-celesat-e-suksesit.jpg" alt="foto" style="margin:15%"/>
+				<h2>Cmimi</br>15.00€</h2>
+				</div>
+				<div id="permbajtja">
+					<p><h2  style="color: #161626;text-align: center">10 Çelësat e suksesit</h2></p>
+				<br/>
+				<br/>
+				<p><h3 style="color:#161626">Dr. Ibrahim el-Fekij</h3></p>
+			<br/>
+			<br/>
+			<p>Një nga çelësat më të rëndësishëm për sukses është pasja e disiplinës për të bërë atë që e di se duhet bërë, qoftë edhe nëse nuk ta ka ëndja edhe aq shumë ta bësh...
+			</p>
+			<br/>
+			<br/>
+			<p id="Rating">Rating:</p>
+			<span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+
+            <div id="butonat" style="width:70%">
+                <div class="but"><button id="blej" onclick="clickCounter()"><span>Add to cart</span></button></div>
+                <div class="but"><button id="lexo"><span>Lexo</span></button></div>
+                  
+            </div>
+        </div>
+        <p>&nbsp;</p>
+       
+		</div>
+		
+
+      </div>
+	
+	
+          <p>&nbsp;</p>
+      <div id="sidebar">
+			<br/>
+			<h3 style="text-align: center">Kategoritë</h3><br/><br/>
+			<ul>
+			<li><a href="#">~Biografi</a></li><br/><br/>
+			<li><a href="#">~Shkenca sociale & Psikologji</a></li><br/><br/>
+			<li><a href="#">~Sigurime</a></li><br/><br/>
+			<li><a href="#">~Shkenca politike</a></li><br/><br/>
+			<li><a href="#">~Përralla</a></li><br/><br/>
+			<li><a href="#">~Letërsi shqiptare</a></li><br/><br/>
+			<li><a href="#">~Filozofi & Sociologji</a></li><br/><br/>
+			<li><a href="#">~Histori</a></li><br/><br/>
+			<li><a href="#">~Ekonomi & Biznes</a></li><br/><br/>
+			<li><a href="#">~Intervista</a></li><br/><br/>
+			<li><a href="#">~Roman</a></li><br/><br/>
+			<li><a href="#">~Libra për fëmijë</a></li><br/><br/>
+			<li><a href="#">~Poezi</a></li><br/><br/>
+			<li><a href="#">~Tregime & Novela</a></li><br/><br/>
 		
