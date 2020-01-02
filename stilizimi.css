@@ -71,8 +71,9 @@ header p a:hover{
   padding:5px;
 }
 .navbar li{
-	margin:17px;
-	padding: 5px;
+  margin:17px;
+  padding: 5px;
+  text-transform: uppercase;
 }
 .navbar li a{
   text-decoration: none;
