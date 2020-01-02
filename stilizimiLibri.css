@@ -37,7 +37,7 @@ header ul li a{
 }
 .content{
     position: relative;
-    width:80%;
+    width:100%;
     display:block;
     float:left;
     background-color: #c0c0c8;
@@ -78,10 +78,18 @@ header ul li a{
     background-color: #f76c6c;
     box-shadow: 0 0 20px black;
 }
+#sidebar ul li a{
+    color:#161626;
+    text-decoration: none;
+}
+#sidebar ul li a:hover{
+    font-weight: bold;
+}
 #libri{
 	width: 50%;
 	display: block;
     float: left;
+    margin-bottom: 100px;
 }
 #libri img{
     width:300px;
@@ -252,4 +260,20 @@ ul li a{
 ul li a{
 	color:#4B6D72;
 	text-decoration: none;
+}
+table{
+    font-size: 20px;
+    color:#161626;
+    text-align: center;
+    border:2px solid #161626;
+    width:50%;
+}
+td,th{
+    border-right:1px solid #161626;
+}
+tr:nth-child(odd){
+    background-color: #c0c0c8;
+}
+tr:nth-child(even){
+    background-color: #f2f2f4;
 }
