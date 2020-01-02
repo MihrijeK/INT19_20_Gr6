@@ -2,6 +2,10 @@ body {
 	display: block;
   margin: 0;
   overflow-x:hidden;
+  font-family: sans-serif;
+}
+a:visited{
+  color:currentColor;
 }
 .img-fluid{
   border-radius: 100%;
@@ -38,6 +42,7 @@ header{
 .icon-band p{
   width:300px;
   color:#f2f2f4;
+  right:100px;
 }
 .icon-band p a{
   font-size:12px;
@@ -92,11 +97,21 @@ header p a:hover{
   border-color: #161626;
   border-radius: 5px;
 }
+#textfield ::placeholder{
+  color: #161626;
+}
 #header-button{
   background-color:#f76c6c;
   columns: #161626;
   padding:10px;
   border-color: #161626;
+  outline:none;
+  cursor: pointer;
+  transition: 0.3s ease-in;
+  font-weight: bold;
+}
+#header-button:hover{
+  box-shadow: 0 0 10px #161626;
 }
 
 * {box-sizing:border-box}
@@ -183,7 +198,19 @@ header p a:hover{
   animation-name: fade;
   animation-duration: 1.5s;
 }
-
+.permbajtje{
+  width:25%;
+  float:left;
+  padding:30px;
+}
+.permbajtje img{
+  width:150px;
+  height:250px;
+}
+.permbajtja p a{
+  color:#f76c6c;
+  text-decoration: none;
+}
 @-webkit-keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
