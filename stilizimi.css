@@ -229,7 +229,7 @@ header p a:hover{
   box-sizing:border-box;
   height:300px;
   background-color: #161626;
-  padding:20px 0;
+  padding:20px 5;
 }
 .inner-footer{
   display:block;
