@@ -6,15 +6,17 @@ function clickCounter()
 {
 if(typeof(Storage)!=="undefined")
 {
-    if (localStorage.clickcount)
-    {
+    if (localStorage.clickcount){
     localStorage.clickcount=Number(localStorage.clickcount)+1;
     }
-  else
-    {
+  else{
     localStorage.clickcount=1;
     }
+    
   document.getElementById("result").innerHTML="Numri i librave ne shporte: " + localStorage.clickcount;
+  if(localStorage.clickcount==5){
+    alert("Nëse bleni tani librat do te keni 20% zbritje!");
+  }
   }
 else
   {
