@@ -27,12 +27,11 @@
     <body>
         <header id="head" style="position: fixed">
             <ul class="navbar">
-                <li><a href="Projekti.html">HOME PAGE</a></li>
-                <li><a href="#">STYLE DEMO</a></li>
-                <li><a href="#">FULL WIDTH</a></li>
-                <li><a href="#">PORTOFOLIO</a></li>
-                <li><a href="#">GALLERY</a></li>
-                <li><a href="#">DROPDOWN</a></li>
+                <li><a href="Projekti.html">BALLINA</a></li>
+                <li><a href="ngjarjet.html">NGJARJET</a></li>
+                <li><a href="#">REKOMANDIMET</a></li>
+                <li><a href="#">TE TJERA</a></li>
+                
                 
                 <div class="Search">
                   <input type="text" name="textfield" id="textfield" placeholder="Search our website...">
@@ -155,44 +154,56 @@
 <br/>
 <br/>
 
-
-        <footer>
-			<div class="footer">
+<div class="footer">
 		<div class="inner-footer">
-			<h3>CONTACT DETAILS</h3>
-			<p>Conavllisituso vestas mus pellentum aenean sapibulum in aliqun volut pat integest nulla.</p>
-			<p>Tel:<a href="#" style="color:#f76c6c;text-decoration: none;">xxx xxxxxx</a></br>
-			Fax:<a href="#" style="color:#f76c6c;text-decoration: none;">xxx xxxxxx</a></br>
-			Email:contact@bllablla.com</p>	
+			<h3>KONTAKTI</h3>
+			<p>Per kontakt me te shpejte me ne klikoni me poshte</p>
+			<p>Tel:<a href="#" style="color:#f76c6c;text-decoration: none;">+38344111111</a><br/>
+			Fax:<a href="#" style="color:#f76c6c;text-decoration: none;">(07) 30367095</a><br/>
+			Email:blejlibra@hotmail.com</p>	
+			<p>Klikoni më poshtë për lokacion .</p>
+<button onclick="getLocation()" type="button" name="butoni" id="footer-button" >Lokacioni</button>
+            <p id="demo"></p>
+<script>
+var x = document.getElementById("demo");
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else { 
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+function showPosition(position) {
+  x.innerHTML = "Latituda: " + position.coords.latitude + "<br>Longituda: " + position.coords.longitude;
+}
+</script>
+        	</div>
+		<div class="inner-footer">
+			<h3>QASJE E SHPEJT&#203</h3>
+			<div class="footer-links"><a href="https://www.biblioteka-ks.org/">Biblioteka Kombe&#235tare</a><br/></div>
+			<div class="footer-links"><a href="https://www.uni-pr.edu/">Universiteti  i Prishtin&#235s</a><br/></div>
+			<div class="footer-links"><a href="http://www.biblioteka-pr.org/sq/Home">Biblioteka Hivzi Sulejmani</a><br/></div>
+			<div class="footer-links"><a href="http://dukagjinigroup.com/project/libraria-dukagjini/">Libraria Dukagjini</a><br/></div>
 		</div>
 		<div class="inner-footer">
-			<h3>QUICK LINKS</h3>
-			<div class="footer-links"><a href="#">Link text here</a></br></div>
-			<div class="footer-links"><a href="#">Link text here</a></br></div>
-			<div class="footer-links"><a href="#">Link text here</a></br></div>
-			<div class="footer-links"><a href="#">Link text here</a></br></div>
-		</div>
-		<div class="inner-footer">
-			<h3>FROM THE BLOG</h3>
-			<p><b>Blog Post Title</b></p>
+			<h3>NGA NE P&#203R JU :)</h3>
+			
 			<p>
-				Posted by Admin sdhfgdjhf vestibuum egestibulum eu justo convallis ague estas aenean elit intesque sed fecilispede estibulum.
+				Kjo faqe ofron shume mundesi per adhuruesit e librit,ku pervec blerjes dhe leximit online ju mund te ndani eksperiencen tuaj edhe me te tjeret.Kenaqesia juaj ne lexim ,kenaqesia jone ne pune !
 			</p>
-			<p style="text-align:right;"><a href="#" style="text-decoration: none;color:#f76c6c">Read More>></a></p>
+			<p style="text-align:right;"><a href="#" style="text-decoration: none;color:#f76c6c">Read More</a></p>
 		</div>
 		<div class="inner-footer">
-			<h3>GRAB OUR NEWSLETTER</h3>
+			<h3>SYGJERIME DHE V&#203REJTJE</h3>
 				<input type="text" name="Emri" placeholder="Name" id="footer-form" style="border:1px solid #f76c6c">
 				<input type="text" name="Email" placeholder="Email" id="footer-form" style="border:1px solid #f76c6c">
 				<button type="button" name="butoni" id="footer-button">SUBMIT</button>
 		</div>
 		</div>
-<div class="copyrights">
-			<h3>Copyrights &copy 2019 All Rights Reserved</h3>
+		<div class="copyrights" style="margin-bottom:-10px">
+			<h3>Copyrights &copy 2020 All Rights Reserved</h3>
 		</div>
-	</div>
-
-        </footer>
+       
 <script src="../Projekti per Internet/all.min.js"></script>
 </body>
 </html>
