@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<title>King Lear</title>
+		<meta charset="utf-8"/>
+        <link href="css\stilizimi.css" rel="stylesheet"/>
+		<link href="css\stilizimiLibri.css" rel="stylesheet"/>
+		<link href="all.min.css" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="jscript\shop-account.js"></script>
+        <script src="jscript\counter.js"></script>
+        <style>
+            .navbar li a{
+                padding-top:0;
+                margin-top:20px;
+            }
+            #textfield{
+                height:30px;
+            }
+            #header-button{
+                height:30px;
+            }
+			header li{
+				height:60px;
+				vertical-align: middle;
+			}
+			
+		</style>
+
+    </head>
+    <body>
+        <header id="head" style="position: fixed">
+            <ul class="navbar">
+                <li><a href="Projekti.html">BALLINA</a></li>
+                <li><a href="#">NGJARJET</a></li>
+                <li><a href="#">REKOMANDIMET</a></li>
+                <li><a href="#">TE TJERA</a></li>
+				
+				<button class="shop-cart" id="shop" onclick="teksti()"><span style="color: antiquewhite;vertical-align: middle;"><i class="fas fa-shopping-cart center"></i></span></button>
+				<button class="shop-cart" id="account" style="right:370px;"><span style="color: antiquewhite;"><i class="fas fa-user-alt"></i></span></button>
+                <div class="Search">
+                  <input type="text" name="textfield" id="textfield" placeholder="Search our website...">
+                  <button type="button" id="header-button">Search</button>
+                </div>
+              </ul>
+        </header>
+		<br/>
+		<br/>
+		
+	<div class="content">
+		<div class="shop-view" id="shop-view"><div id="result"></div>
+							   <button type="button" id="buy" onclick="resetCount(),window.location.href='C:/Users/HP/Desktop/Projekti per Internet/Blej.html'">Blej</button></div>
+		<div class="account-view" id="account-view">
+			<ul>
+				<li><i class="fas fa-user-alt"></i>Account</li>
+				<li><i class="fas fa-sign-out-alt"></i>Log out</li>
+				<li><i class="fas fa-book-open"></i>MyLibrary</li>
+			</ul>
+		</div>
+	  <div style="display: inline">
+            <div style="display: block;width:70%;float: left">
+				<div id="libri">
+				<img src="fotot\King Lear.jpg" alt="foto" style="margin:15%"/>
+				<h2>Cmimi</br>7.00€</h2>
+				</div>
+				<div id="permbajtja">
+					<p><h2  style="color: #161626;text-align: center">King Lear</h2></p>
+				<br/>
+				<br/>
+				<p><h3 style="color:#161626">William Shakespeare</h3></p>
+			<br/>
+			<br/>
+			<p>Mbreti Lir eshte mbreti i Anglise. Ai vendos te lere fronin e tij dhe t’a ndaje mes tre vajzave te tij, Gonerilit, Reganit dhe Kordelias. Ai i vendos ato para nje prove ku do te shihte se cila nga vajzat do t’a donte me shume. Dy vajzat e medha  nisin ta manipulojne me fjale, ndersa Kordelja, vajza e vogel thote se ajo e do babain e saj ashtu sic do femije. Prandaj ai nuk i jep asaj nga tokat e veta, por e mallkon  dhe  e debon ate nga shtepia. Nderkohe  Kordelja shkon ne France pasi mbreti i Frances ishte ne dashuri me te. Me pas Liri e kupton se c’gabim te rende kishte bere pasi dy vajzat e debojne nga shtepia dhe e lene ne shi.
+                Nderkohe  Konti I Glosterit  ka gjithashtu probleme familjare. Djali i tij i madh, Edmundi, eshte i adoptuar. Ai nuk e pranon dot kete dhe thur nje intrige sikur djali tjeter, Edgari do te vrase babane e tyre. Ndaj Glosteri e debon Edgarin dhe mban prane vetes Edmundin. Kur Glosteri merr vesh qe Lirin e kane braktisur te bijat, ai e ndihmon ate. Regan dhe I shoqi I saj e masakrojne per kete, dhe ai perfundon serisht tek Edgari, ku shkoi dhe Liri.
+			</p>
+			<br/>
+			<br/>
+			<p id="Rating">Rating:</p>
+			<span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+        
+
+            <div id="butonat" style="width:70%">
+                <div class="but"><button id="blej" onclick="clickCounter()"><span>Shto në shportë</span></button></div>
+                <div class="but"><button id="lexo"><span>Lexo</span></button></div>
+                  
+            </div>
+        </div>
+        <p>&nbsp;</p>
+       
+		</div>
+		
+
+      </div>
+	
+	
+          <p>&nbsp;</p>
+      <div id="sidebar">
+			<br/>
+			<h3 style="text-align: center">Kategoritë</h3><br/><br/>
+			<ul>
+			<li><a href="#">~Biografi</a></li><br/><br/>
+			<li><a href="#">~Shkenca sociale & Psikologji</a></li><br/><br/>
+			<li><a href="#">~Sigurime</a></li><br/><br/>
+			<li><a href="#">~Shkenca politike</a></li><br/><br/>
+			<li><a href="#">~Përralla</a></li><br/><br/>
+			<li><a href="#">~Letërsi shqiptare</a></li><br/><br/>
+			<li><a href="#">~Filozofi & Sociologji</a></li><br/><br/>
+			<li><a href="#">~Histori</a></li><br/><br/>
+			<li><a href="#">~Ekonomi & Biznes</a></li><br/><br/>
+			<li><a href="#">~Intervista</a></li><br/><br/>
+			<li><a href="#">~Roman</a></li><br/><br/>
+			<li><a href="#">~Libra për fëmijë</a></li><br/><br/>
+			<li><a href="#">~Poezi</a></li><br/><br/>
+			<li><a href="#">~Tregime & Novela</a></li><br/><br/>
+		</ul>
+			<hr/>
+			<br/>
+		<h3 style="text-align: center">Related books</h3>
+			<br/>
+			<br/>
+		<a href="the-tragedy-of-Macbeth.html"><img src="fotot\Macbeth.jpg" alt="foto" class="center"></a>
+		<p><h2 style="text-align: center">The tragedy of Macbeth</h2></p>
+			<p><h5 style="text-align: center">by William Shakespeare</h5></p>
+        <br/>
+        <br/>
+      
+    
+		</div>
+		<table cellspacing="0" cellpadding="5">
+			<tr>
+				<td></td>
+				<th>Nr.i faqeve</th>
+				<th>Perkthyesi</th>
+				<th>Sh.botuese</th>
+				<th>Viti botimit</th>
+				<th>Recezioni</th>
+			</tr>
+			<tr>
+				<td>Botimi 1</td>
+				<td>120</td>
+				<td></td>
+				<td>dukagjini</td>
+				<td>2006</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>Botimi 2</td>
+				<td>110</td>
+				<td></td>
+				<td>albusi</td>
+				<td>2000</td>
+				<td></td>
+			</tr>
+		</table>
+	  
+    </div>
+
+	
+	</div>
+<br/>
+<br/>
+<br/>
+		<footer>
+			<div class="footer">
+				<div class="inner-footer" style="padding-top:50px;">
+					<h3>KONTAKTI</h3>
+				</br>
+					<p>Per kontakt me te shpejte me ne klikoni me poshte</p>
+					<p>Tel:<a href="#" style="color:#f76c6c;text-decoration: none;">+38344111111</a><br/>
+					Fax:<a href="#" style="color:#f76c6c;text-decoration: none;">(07) 30367095</a><br/></br>
+					Email:blejlibra@hotmail.com</p></br>
+					<p>Klikoni më poshtë për lokacion .</p>
+		
+					<button onclick="getLocation()" type="button" name="butoni" id="footer-button" >Lokacioni</button>
+								<p id="demo"></p>
+					<script>
+					var x = document.getElementById("demo");
+		
+					function getLocation() {
+					if (navigator.geolocation) {
+						navigator.geolocation.getCurrentPosition(showPosition);
+					} else { 
+						x.innerHTML = "Geolocation is not supported by this browser.";
+					}
+					}
+		
+					function showPosition(position) {
+					x.innerHTML = "Latituda: " + position.coords.latitude + "<br>Longituda: " + position.coords.longitude;
+					}
+					</script>
+					</div>
+				<div class="inner-footer" style="padding-top:50px;">
+					<h3>QASJE E SHPEJTE</h3>
+				</br>
+					<div class="footer-links"><a href="https://www.biblioteka-ks.org/">Biblioteka Kombetare</a><br/></div>
+					<div class="footer-links"><a href="https://www.uni-pr.edu/">Universiteti  i Prishtines</a><br/></div>
+					<div class="footer-links"><a href="http://www.biblioteka-pr.org/sq/Home">Biblioteka Hivzi Sulejmani</a><br/></div>
+					<div class="footer-links"><a href="http://dukagjinigroup.com/project/libraria-dukagjini/">Libraria Dukagjini</a><br/></div>
+				</div>
+				<div class="inner-footer" style="padding-top:50px;">
+					<h3>NGA NE PER JU :)</h3>
+				</br>
+					<p>
+						Kjo faqe ofron shume mundesi per adhuruesit e librit,ku pervec blerjes dhe leximit online ju mund te ndani eksperiencen tuaj edhe me te tjeret.Kenaqesia juaj ne lexim ,kenaqesia jone ne pune !
+					</p>
+				</br>
+					<p style="text-align:right;"><a href="#" style="text-decoration: none;color:#f76c6c">Read More</a></p>
+				</div>
+				<div class="inner-footer" style="padding-top:50px;">
+					<h3>SYGJERIME DHE VEREJTJE</h3>
+				</br>
+						<input type="text" name="Emri" placeholder="Name" id="footer-form" style="border:1px solid #f76c6c">
+						<input type="text" name="Email" placeholder="Email" id="footer-form" style="border:1px solid #f76c6c">
+						<button type="button" name="butoni" id="footer-button">SUBMIT</button>
+				</div>
+				</div>
+				<div class="copyrights" style="margin-bottom:-10px">
+					<h3>Copyrights &copy 2019 All Rights Reserved</h3>
+				</div>
+		</footer>
+<script src="../Projekti per Internet/all.min.js">
+</script>
+</body>
+</html>
