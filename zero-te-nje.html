@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<title>Zero te një</title>
+		<meta charset="utf-8"/>
+        <link href="css\stilizimi.css" rel="stylesheet"/>
+		<link href="css\stilizimiLibri.css" rel="stylesheet"/>
+		<link href="all.min.css" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="jscript\shop-account.js"></script>
+		<script src="jscript\counter.js"></script>
+        <style>
+            .navbar li a{
+                padding-top:0;
+                margin-top:20px;
+            }
+            #textfield{
+                height:30px;
+            }
+            #header-button{
+                height:30px;
+            }
+			header li{
+				height:60px;
+				vertical-align: middle;
+			}
+			
+		</style>
+		
+
+    </head>
+    <body>
+        <header id="head" style="position: fixed">
+            <ul class="navbar">
+               <li><a href="indexi.html">BALLINA</a></li>
+                <li><a href="ngjarjet.html">NGJARJET</a></li>
+                <li><a href="Rekomandimet.html">REKOMANDIMET</a></li>
+                <li><a href="te-tjera.html">TE TJERA</a></li>
+
+				
+				<button class="shop-cart" id="shop" onclick="teksti()"><span style="color: antiquewhite;vertical-align: middle;"><i class="fas fa-shopping-cart center"></i></span></button>
+				<button class="shop-cart" id="account" style="right:370px;"><span style="color: antiquewhite;"><i class="fas fa-user-alt"></i></span></button>
+                <div class="Search">
+                  <input type="text" name="textfield" id="textfield" placeholder="Search our website...">
+                  <button type="button" id="header-button">Search</button>
+                </div>
+              </ul>
+        </header>
+		<br/>
+		<br/>
+		
+	<div class="content">
+		<div class="shop-view" id="shop-view"><div id="result"></div>
+							   <button type="button" id="buy" onclick="resetCount(),window.location.href='Blej.html'">Blej</button></div>
+		<div class="account-view" id="account-view">
+			<ul>
+				<li><i class="fas fa-user-alt"></i>Account</li>
+				<li><i class="fas fa-sign-out-alt"></i>Log out</li>
+				<li><i class="fas fa-book-open"></i>MyLibrary</li>
+			</ul>
+		</div>
+	  <div style="display: inline">
+            <div style="display: block;width:70%;float: left">
+				<div id="libri">
+				<img src="fotot/zero-te-nje.jpg" alt="foto" style="margin:15%" width="300" height="456"/>
+				<h2>Cmimi</br>20.00€</h2>
+				</div>
+				<div id="permbajtja">
+					<p><h2  style="color: #161626;text-align: center">Zero te një</h2></p>
+				<br/>
+				<br/>
+				<p><h3 style="color:#161626">Peter Thiel</h3></p>
+			<br/>
+			<br/>
+			<p>Ky libër është se si të arrijmë atje. "Kur një rrezikues shkruan një Iibër, lexoje. Në rastin e Peter Thiel, lexoje dy herë. Ose, për të qenë i sigurt, tri herë. Eshtë klasik.Ky libër paraqet ide tërësisht të reja dhe përtëritëse në krijimin e vlerës në botë.Peter Thiel ka ndërtuar kompani të shumta depërtuese ...
+			</p>
+			<br/>
+			<br/>
+			<p id="Rating">Rating:</p>
+			<span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+
+            <div id="butonat" style="width:70%">
+                <div class="but"><button id="blej" onclick="clickCounter()"><span>Shto në shportë</span></button></div>
+                <div class="but"><button id="lexo"><span>Lexo</span></button></div>
+                  
+            </div>
+        </div>
+        <p>&nbsp;</p>
+       
+		</div>
+		
+
+      </div>
+	
+	
+          <p>&nbsp;</p>
+      <div id="sidebar">
+			<br/>
+			<h3 style="text-align: center">Kategoritë</h3><br/><br/>
+			<ul>
+				<li><a href="Biografi.html">~Biografi</a></li><br/><br/>
+                <li><a href="shkenca.html">~Shkenca sociale & Psikologji</a></li><br/><br/>
+                <li><a href="Fantazi.html">~Fantazi</a></li><br/><br/>
+                <li><a href="letersi.html">~Letërsi shqiptare</a></li><br/><br/>
+                <li><a href="filozofi.html">~Filozofi & Sociologji</a></li><br/><br/>
+                <li><a href="histori.html">~Histori</a></li><br/><br/>
+                <li><a href="ekonomi.html">~Ekonomi & Biznes</a></li><br/><br/>
+                <li><a href="femije.html">~Libra për fëmijë</a></li><br/><br/>
+                <li><a href="religjioz.html">~Religjioz</a></li><br/><br/>
+		</ul>
+			<hr/>
+			<br/>
+		<h3 style="text-align: center">Related books</h3>
+			<br/>
+			<br/>
+          <img src="fotot/10-celesat-e-suksesit.jpg"  alt="10-celesat-e-suksesit" class="center"></a>
+		<p><h2 style="text-align: center">10 Çelësat e suksesit</h2></p>
+			<p><h5 style="text-align: center">nga Dr. Ibrahim el-Fekij</h5></p>
+        <br/>
+        <br/>
+		</div>
+		<table cellspacing="0" cellpadding="5">
+			<tr>
+				<td></td>
+				<th>Nr.i faqeve</th>
+				<th>Perkthyesi</th>
+				<th>Sh.botuese</th>
+				<th>Viti botimit</th>
+			</tr>
+			<tr>
+                <td>Botimi 1</td>
+				<td>220</td>
+				<td>--</td>
+				<td>Botime Pema</td>
+				<td>2018</td>
+			</tr>
+			<!-- <tr>
+				<td>Botimi 2</td>
+				<td>350</td>
+				<td>sdhcsjhd</td>
+				<td>dukagjini</td>
+				<td>2005</td>
+				<td>hsdjhv</td>
+			</tr> -->
+		</table>
+<br/>
+<br/>
+<br/>
+
+    </div>
+	</div>
+<br/>
+<br/>
+<br/>
+<div class="footer">
+		<div class="inner-footer">
+			<h3>KONTAKTI</h3>
+			<p>Për kontakt më të shpejtë me ne klikoni më poshtë</p>
+			<p>Tel:<a href="#" style="color:#f76c6c;text-decoration: none;">+38344111111</a><br/>
+			Fax:<a href="#" style="color:#f76c6c;text-decoration: none;">(07) 30367095</a><br/>
+			Email:blejlibra@hotmail.com</p>
+            <p>Klikoni më poshtë për lokacion .</p>
+
+<button onclick="getLocation()" type="button" name="butoni" id="footer-button" >Lokacioni</button>
+            <p id="demo"></p>
+<script>
+var x = document.getElementById("demo");
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else { 
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function showPosition(position) {
+  x.innerHTML = "Latituda: " + position.coords.latitude + "<br>Longituda: " + position.coords.longitude;
+}
+</script>
+
+		</div>
+		<div class="inner-footer">
+			<h3>QASJE E SHPEJT&#203</h3>
+			<div class="footer-links"><a href="https://www.biblioteka-ks.org/">Biblioteka Kombe&#235tare</a><br/></div>
+			<div class="footer-links"><a href="https://www.uni-pr.edu/">Universiteti  i Prishtin&#235s</a><br/></div>
+			<div class="footer-links"><a href="http://www.biblioteka-pr.org/sq/Home">Biblioteka Hivzi Sulejmani</a><br/></div>
+			<div class="footer-links"><a href="http://dukagjinigroup.com/project/libraria-dukagjini/">Libraria Dukagjini</a><br/></div>
+		</div>
+		<div class="inner-footer">
+			<h3>NGA NE P&#203R JU  :) </h3>
+			
+			<p>
+				Kjo faqe ofron shum&#235 mund&#235si p&#235r adhuruesit e librit,ku p&#235rve&#231 blerjes dhe leximit online ju mund t&#235 ndani eksperiencen tuaj edhe me t&#235 tjer&#235t. K&#235naqesia juaj n&#235 lexim ,k&#235naqesia jon&#235 n&#235 pun&#235 !
+			</p>
+			<p style="text-align:right;"><a href="#" style="text-decoration: none;color:#f76c6c">Read More</a></p>
+		</div>
+		<div class="inner-footer">
+			<h3>SYGJERIME DHE V&#203REJTJE</h3>
+				<input type="text" name="Emri" placeholder="Name" id="footer-form" style="border:1px solid #f76c6c">
+				<input type="text" name="Email" placeholder="Email" id="footer-form" style="border:1px solid #f76c6c">
+				<button type="button" name="butoni" id="footer-button">SUBMIT</button>
+		</div>
+		</div>
+		<div class="copyrights" style="margin-bottom:-10px">
+			<h3>Copyrights &copy 2020 All Rights Reserved</h3>
+		</div>
+  
+  
+<script src="../Projekti per Internet/all.min.js">
+</script>
+</body>
+</html>
