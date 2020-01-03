@@ -141,16 +141,32 @@
 			<p>Tel:<a href="#" style="color:#f76c6c;text-decoration: none;">+38344111111</a><br/>
 			Fax:<a href="#" style="color:#f76c6c;text-decoration: none;">(07) 30367095</a><br/>
 			Email:blejlibra@hotmail.com</p>	
-		</div>
+			<p>Klikoni më poshtë për lokacion .</p>
+<button onclick="getLocation()" type="button" name="butoni" id="footer-button" >Lokacioni</button>
+            <p id="demo"></p>
+<script>
+var x = document.getElementById("demo");
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else { 
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+function showPosition(position) {
+  x.innerHTML = "Latituda: " + position.coords.latitude + "<br>Longituda: " + position.coords.longitude;
+}
+</script>
+        	</div>
 		<div class="inner-footer">
-			<h3>QASJE E SHPEJTE</h3>
-			<div class="footer-links"><a href="https://www.biblioteka-ks.org/">Biblioteka Kombetare</a><br/></div>
-			<div class="footer-links"><a href="https://www.uni-pr.edu/">Universiteti  i Prishtines</a><br/></div>
+			<h3>QASJE E SHPEJT&#203</h3>
+			<div class="footer-links"><a href="https://www.biblioteka-ks.org/">Biblioteka Kombe&#235tare</a><br/></div>
+			<div class="footer-links"><a href="https://www.uni-pr.edu/">Universiteti  i Prishtin&#235s</a><br/></div>
 			<div class="footer-links"><a href="http://www.biblioteka-pr.org/sq/Home">Biblioteka Hivzi Sulejmani</a><br/></div>
 			<div class="footer-links"><a href="http://dukagjinigroup.com/project/libraria-dukagjini/">Libraria Dukagjini</a><br/></div>
 		</div>
 		<div class="inner-footer">
-			<h3>NGA NE PER JU :)</h3>
+			<h3>NGA NE P&#203R JU :)</h3>
 			
 			<p>
 				Kjo faqe ofron shume mundesi per adhuruesit e librit,ku pervec blerjes dhe leximit online ju mund te ndani eksperiencen tuaj edhe me te tjeret.Kenaqesia juaj ne lexim ,kenaqesia jone ne pune !
@@ -158,15 +174,16 @@
 			<p style="text-align:right;"><a href="#" style="text-decoration: none;color:#f76c6c">Read More</a></p>
 		</div>
 		<div class="inner-footer">
-			<h3>SYGJERIME DHE VEREJTJE</h3>
+			<h3>SYGJERIME DHE V&#203REJTJE</h3>
 				<input type="text" name="Emri" placeholder="Name" id="footer-form" style="border:1px solid #f76c6c">
 				<input type="text" name="Email" placeholder="Email" id="footer-form" style="border:1px solid #f76c6c">
 				<button type="button" name="butoni" id="footer-button">SUBMIT</button>
 		</div>
 		</div>
 		<div class="copyrights" style="margin-bottom:-10px">
-			<h3>Copyrights &copy 2019 All Rights Reserved</h3>
+			<h3>Copyrights &copy 2020 All Rights Reserved</h3>
 		</div>
+       
 	<script src="jquery-3.4.1.min.js"></script>
 	
        
