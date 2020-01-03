@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<title>Libri</title>
+		<meta charset="utf-8"/>
+        <link href="css\stilizimi.css" rel="stylesheet"/>
+		<link href="css\stilizimiLibri.css" rel="stylesheet"/>
+		<link href="all.min.css" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="jscript\shop-account.js"></script>
+        <script src="jscript\counter.js"></script>
+        <style>
+      
+        *{
+            margin:0;
+            box-sizing: border-box;
+        }
+        #head{
+            position:sticky;
+            margin-top:0;
+            width:100%;
+            height:60px;
+            background-color: #161626;
+        }
+        header ul li{
+            display:inline-block;
+            list-style: none;
+        }
+        header ul li a{
+            margin-right:-5px;
+            
+        }
+        header ul li a{
+            padding-bottom:15px;
+        }
+        #content{
+            width:75%;
+            
+            display:block;
+            float:left;
+            background-color: #c0c0c8;
+        }
+        #sidebar{
+            width:20%;
+            height:100%;
+            display:block;
+            float:right;
+            background-color: #f76c6c;
+            box-shadow: 0 0 20px black;
+        }
+        #libri{
+            width: 50%;
+            display: block;
+            float: left;
+        }
+        #permbajtja{
+            width:50%;
+            display: block;
+            float:right;
+            margin-top: 80px;
+            text-align: center;
+        }
+        .checked {
+          color: orange;
+        }
+        .Search{
+            margin-left:-10px;
+            display: block;
+            float: right;
+            width:20%;
+            vertical-align: middle;
+        }
+        #textfield{
+            margin-top:16px;
+        }
+        #header-button{
+            vertical-align: middle;
+        }
+        .but{
+            width:30%;
+            display: block;
+            float: left;
+            text-align: center;
+        }
+        #cmimi{
+            
+            border-radius: 5px;
+            width: 180px;
+            height:70px;
+            background-color: #f76c6c;
+            color:white;
+            font-size: 24px;
+            
+        }
+        #blej
+        {
+            border-radius: 5px;
+            width: 180px;
+            height:70px;
+            background-color: #f76c6c;
+            color:white;
+            font-size: 24px;
+        }
+        #lexo{
+            border-radius: 5px;
+            width: 180px;
+            height:70px;
+            background-color: #f76c6c;
+            color:white;
+            font-size: 24px;
+        }
+        #blej {
+           
+            cursor: pointer;
+            text-align: center;
+            transition: all 0.5s;
+        }
+        
+        #blej span {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.5s;
+        }
+        #blej span:after {
+            content: '\00bb';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -20px;
+            transition: 0.5s;
+        }
+        #blej:hover span {
+            padding-right: 20px;
+            font-weight: bold;
+        }
+        #blej:hover span:after {
+            opacity: 1;
+            right: 0;
+        }
+        #lexo {
+           
+            cursor: pointer;
+            text-align: center;
+            transition: all 0.5s;
+        }
+        
+        #lexo span {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.5s;
+        }
+        #lexo span:after {
+            content: '\00bb';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -20px;
+            transition: 0.5s;
+        }
+        #lexo:hover span {
+            padding-right: 20px;
+            font-weight: bold;
+        }
+        #lexo:hover span:after {
+            opacity: 1;
+            right: 0;
+        }
+        .center {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width: 50%;
+        }
+        table tr{
+            border: 1px solid black;
+        }
+        .libri{
+            display: block;
+            width: 33%;
+            float: left;
+            
+        }
+        ul li a{
+            color:#4B6D72;
+            text-decoration: none;
+        }
+        ul li a{
+            color:#4B6D72;
+            text-decoration: none;
+        }
+        
+            .navbar li a{
+                padding-top:0;
+                margin-top:20px;
+            }
+            #textfield{
+                height:30px;
+            }
+            #header-button{
+                height:30px;
+            }
+			header li{
+				height:60px;
+				vertical-align: middle;
+            }
+      
+			
+		</style>
+		
+
+    </head>
+    <body>
+        <header id="head" style="position: fixed">
+            <ul class="navbar">
+                <li><a href="Projekti.html">BALLINA</a></li>
+                <li><a href="#">NGJARJET</a></li>
+                <li><a href="#">REKOMANDIMET</a></li>
+                <li><a href="#">TE TJERA</a></li>
+				
+				<button class="shop-cart" id="shop" onclick="teksti()"><span style="color: antiquewhite;vertical-align: middle;"><i class="fas fa-shopping-cart center"></i></span></button>
+				<button class="shop-cart" id="account" style="right:370px;"><span style="color: antiquewhite;"><i class="fas fa-user-alt"></i></span></button>
+                <div class="Search">
+                  <input type="text" name="textfield" id="textfield" placeholder="Search our website...">
+                  <button type="button" id="header-button">Search</button>
+                </div>
+              </ul>
+        </header>
+		<br/>
+		<br/>
+		
+	<div class="content">
+		<div class="shop-view" id="shop-view"><div id="result"></div>
+							   <button type="button" id="buy" onclick="resetCount(),window.location.href='C:/Users/HP/Desktop/Projekti per Internet/Blej.html'">Blej</button></div>
+		<div class="account-view" id="account-view">
+			<ul>
+				<li><i class="fas fa-user-alt"></i>Account</li>
+				<li><i class="fas fa-sign-out-alt"></i>Log out</li>
+				<li><i class="fas fa-book-open"></i>MyLibrary</li>
+			</ul>
+		</div>
+	  <div style="display: inline">
+            <div style="display: block;width:70%;float: left">
+				<div id="libri">
+				<img src="fotot\Fausti.jpg" alt="foto" style="margin:15%"/>
+				<h2>Cmimi</br>15.00€</h2>
+				</div>
+				<div id="permbajtja">
+					<p><h2  style="color: #161626;text-align: center">Fausti</h2></p>
+				<br/>
+				<br/>
+				<p><h3 style="color:#161626">Johan Gëte</h3></p>
+			<br/>
+			<br/>
+			<p>“Fausti” është kryevepra e Johan Volfgang Gëtes dhe njëherazi njërës prej veprave më të qëndrueshme në historinë e letërsisë botërore. “Fausti” është në një farë kuptimi dhiata e Gëtes, testamenti i gjithë jetës së këtij poeti e mendimtari të shquar, kumton studjuesi dhe përkthyesi Shpëtim Çuçka.
+
+                “Fausti” në thelb nuk i flet shijes së njeriut, por mendjes së tij. Dhe historia jonë mijëravjeçare njerëzore na mëson se pa mendjen nuk mund të hedhim as edhe një hap të vetëm përpara, as individualisht, as, aq më pak, shoqërisht.
+                
+                E megjithatë “Fausti” i drejtohet me atë mënyrën e vet, në të vërtetë gjeniale, edhe shijes së njeriut. Së pari, sepse nuk ka bukuri njerëzore, që të mos jetë e krijuar nga mendja e njeriut. Së dyti, sepse një krijesë e vërtetë e mendjes njerëzore është patjetër e bukur, pavarësisht nëse ajo është një produkt material apo një krijim shpirtëror, nëse është një shfaqje e talentit të saktësisë shkencore apo një krijesë e fantazisë artistike.
+			</p>
+			<br/>
+			<br/>
+			<p id="Rating">Rating:</p>
+			<span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+        
+
+            <div id="butonat" style="width:70%">
+                <div class="but"><button id="blej" onclick="clickCounter()"><span>Shto në shportë</span></button></div>
+                <div class="but"><button id="lexo"><span>Lexo</span></button></div>
+                  
+            </div>
+        </div>
+        <p>&nbsp;</p>
+       
+		</div>
+		
+
+      </div>
+	
+	
+          <p>&nbsp;</p>
+      <div id="sidebar">
+			<br/>
+			<h3 style="text-align: center">Kategoritë</h3><br/><br/>
+			<ul>
+			<li><a href="#">~Biografi</a></li><br/><br/>
+			<li><a href="#">~Shkenca sociale & Psikologji</a></li><br/><br/>
+			<li><a href="#">~Sigurime</a></li><br/><br/>
+			<li><a href="#">~Shkenca politike</a></li><br/><br/>
+			<li><a href="#">~Përralla</a></li><br/><br/>
+			<li><a href="#">~Letërsi shqiptare</a></li><br/><br/>
+			<li><a href="#">~Filozofi & Sociologji</a></li><br/><br/>
+			<li><a href="#">~Histori</a></li><br/><br/>
+			<li><a href="#">~Ekonomi & Biznes</a></li><br/><br/>
+			<li><a href="#">~Intervista</a></li><br/><br/>
+			<li><a href="#">~Roman</a></li><br/><br/>
+			<li><a href="#">~Libra për fëmijë</a></li><br/><br/>
+			<li><a href="#">~Poezi</a></li><br/><br/>
+			<li><a href="#">~Tregime & Novela</a></li><br/><br/>
+		</ul>
+			<hr/>
+			<br/>
+		<h3 style="text-align: center">Related books</h3>
+			<br/>
+			<br/>
+		<a href="frosina-e-janines.html"><img src="fotot\Frosina e Janines.jpg" alt="foto" class="center"></a>
+		<p><h2 style="text-align: center">Frosina e Janines</h2></p>
+			<p><h5 style="text-align: center">by Mira Meksi</h5></p>
+        <br/>
+        <br/>
+        <a href="king-lear.html"><img src="fotot\King Lear.jpg" alt="foto" class="center"></a>
+		<p><h2 style="text-align: center">King Lear</h2></p>
+			<p><h5 style="text-align: center">by William Shakespeare</h5></p>
+    
+		</div>
+		<table cellspacing="0" cellpadding="5">
+			<tr>
+				<td></td>
+				<th>Nr.i faqeve</th>
+				<th>Perkthyesi</th>
+				<th>Sh.botuese</th>
+				<th>Viti botimit</th>
+				<th>Recezioni</th>
+			</tr>
+			<tr>
+				<td>Botimi 1</td>
+				<td>350</td>
+				<td>sdhcsjhd</td>
+				<td>dukagjini</td>
+				<td>2005</td>
+				<td>hsdjhv</td>
+			</tr>
+			<tr>
+				<td>Botimi 2</td>
+				<td>350</td>
+				<td>sdhcsjhd</td>
+				<td>dukagjini</td>
+				<td>2005</td>
+				<td>hsdjhv</td>
+			</tr>
+		</table>
+	  
+    </div>
+
+	
+	</div>
+<br/>
+<br/>
+<br/>
+		<footer>
+			<div class="footer">
+				<div class="inner-footer" style="padding-top:50px;">
+					<h3>KONTAKTI</h3>
+				</br>
+					<p>Per kontakt me te shpejte me ne klikoni me poshte</p>
+					<p>Tel:<a href="#" style="color:#f76c6c;text-decoration: none;">+38344111111</a><br/>
+					Fax:<a href="#" style="color:#f76c6c;text-decoration: none;">(07) 30367095</a><br/></br>
+					Email:blejlibra@hotmail.com</p></br>
+					<p>Klikoni më poshtë për lokacion .</p>
+		
+					<button onclick="getLocation()" type="button" name="butoni" id="footer-button" >Lokacioni</button>
+								<p id="demo"></p>
+					<script>
+					var x = document.getElementById("demo");
+		
+					function getLocation() {
+					if (navigator.geolocation) {
+						navigator.geolocation.getCurrentPosition(showPosition);
+					} else { 
+						x.innerHTML = "Geolocation is not supported by this browser.";
+					}
+					}
+		
+					function showPosition(position) {
+					x.innerHTML = "Latituda: " + position.coords.latitude + "<br>Longituda: " + position.coords.longitude;
+					}
+					</script>
+					</div>
+				<div class="inner-footer" style="padding-top:50px;">
+					<h3>QASJE E SHPEJTE</h3>
+				</br>
+					<div class="footer-links"><a href="https://www.biblioteka-ks.org/">Biblioteka Kombetare</a><br/></div>
+					<div class="footer-links"><a href="https://www.uni-pr.edu/">Universiteti  i Prishtines</a><br/></div>
+					<div class="footer-links"><a href="http://www.biblioteka-pr.org/sq/Home">Biblioteka Hivzi Sulejmani</a><br/></div>
+					<div class="footer-links"><a href="http://dukagjinigroup.com/project/libraria-dukagjini/">Libraria Dukagjini</a><br/></div>
+				</div>
+				<div class="inner-footer" style="padding-top:50px;">
+					<h3>NGA NE PER JU :)</h3>
+				</br>
+					<p>
+						Kjo faqe ofron shume mundesi per adhuruesit e librit,ku pervec blerjes dhe leximit online ju mund te ndani eksperiencen tuaj edhe me te tjeret.Kenaqesia juaj ne lexim ,kenaqesia jone ne pune !
+					</p>
+				</br>
+					<p style="text-align:right;"><a href="#" style="text-decoration: none;color:#f76c6c">Read More</a></p>
+				</div>
+				<div class="inner-footer" style="padding-top:50px;">
+					<h3>SYGJERIME DHE VEREJTJE</h3>
+				</br>
+						<input type="text" name="Emri" placeholder="Name" id="footer-form" style="border:1px solid #f76c6c">
+						<input type="text" name="Email" placeholder="Email" id="footer-form" style="border:1px solid #f76c6c">
+						<button type="button" name="butoni" id="footer-button">SUBMIT</button>
+				</div>
+				</div>
+				<div class="copyrights" style="margin-bottom:-10px">
+					<h3>Copyrights &copy 2019 All Rights Reserved</h3>
+				</div>
+		</footer>
+<script src="../Projekti per Internet/all.min.js">
+</script>
+</body>
+</html>
