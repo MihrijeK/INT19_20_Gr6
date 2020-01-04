@@ -63,7 +63,7 @@
 	  <div style="display: inline">
             <div style="display: block;width:70%;float: left">
 				<div id="libri">
-				<img src="fotot/kur-qau-nicja.png" alt="foto" style="margin:15%"/>
+				<img src="fotot\kur-qau-nicja.png" alt="foto" style="margin:15%"/>
 				<h2>Cmimi</br>30.00€</h2>
 				</div>
 				<div id="permbajtja">
@@ -157,60 +157,65 @@
 <br/>
 <br/>
 <br/>
+<footer>
 <div class="footer">
-		<div class="inner-footer">
-			<h3>KONTAKTI</h3>
-			<p>Për kontakt më të shpejtë me ne klikoni më poshtë</p>
-			<p>Tel:<a href="#" style="color:#f76c6c;text-decoration: none;">+38344111111</a><br/>
-			Fax:<a href="#" style="color:#f76c6c;text-decoration: none;">(07) 30367095</a><br/>
-			Email:blejlibra@hotmail.com</p>
+    <div class="footer">
+        <div class="inner-footer" style="padding-top:50px;">
+            <h3>KONTAKTI</h3>
+        </br>
+            <p>Per kontakt me te shpejte me ne klikoni me poshte</p>
+            <p>Tel:<a href="#" style="color:#f76c6c;text-decoration: none;">+38344111111</a><br/>
+            Fax:<a href="#" style="color:#f76c6c;text-decoration: none;">(07) 30367095</a><br/></br>
+            Email:blejlibra@hotmail.com</p></br>
             <p>Klikoni më poshtë për lokacion .</p>
 
-<button onclick="getLocation()" type="button" name="butoni" id="footer-button" >Lokacioni</button>
-            <p id="demo"></p>
-<script>
-var x = document.getElementById("demo");
+            <button onclick="getLocation()" type="button" name="butoni" id="footer-button" >Lokacioni</button>
+                        <p id="demo"></p>
+            <script>
+            var x = document.getElementById("demo");
 
-function getLocation() {
-  if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(showPosition);
-  } else { 
-    x.innerHTML = "Geolocation is not supported by this browser.";
-  }
-}
+            function getLocation() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(showPosition);
+            } else { 
+                x.innerHTML = "Geolocation is not supported by this browser.";
+            }
+            }
 
-function showPosition(position) {
-  x.innerHTML = "Latituda: " + position.coords.latitude + "<br>Longituda: " + position.coords.longitude;
-}
-</script>
-
-		</div>
-		<div class="inner-footer">
-			<h3>QASJE E SHPEJT&#203</h3>
-			<div class="footer-links"><a href="https://www.biblioteka-ks.org/">Biblioteka Kombe&#235tare</a><br/></div>
-			<div class="footer-links"><a href="https://www.uni-pr.edu/">Universiteti  i Prishtin&#235s</a><br/></div>
-			<div class="footer-links"><a href="http://www.biblioteka-pr.org/sq/Home">Biblioteka Hivzi Sulejmani</a><br/></div>
-			<div class="footer-links"><a href="http://dukagjinigroup.com/project/libraria-dukagjini/">Libraria Dukagjini</a><br/></div>
-		</div>
-		<div class="inner-footer">
-			<h3>NGA NE P&#203R JU  :) </h3>
-			
-			<p>
-				Kjo faqe ofron shum&#235 mund&#235si p&#235r adhuruesit e librit,ku p&#235rve&#231 blerjes dhe leximit online ju mund t&#235 ndani eksperiencen tuaj edhe me t&#235 tjer&#235t. K&#235naqesia juaj n&#235 lexim ,k&#235naqesia jon&#235 n&#235 pun&#235 !
-			</p>
-			<p style="text-align:right;"><a href="#" style="text-decoration: none;color:#f76c6c">Read More</a></p>
-		</div>
-		<div class="inner-footer">
-			<h3>SYGJERIME DHE V&#203REJTJE</h3>
-				<input type="text" name="Emri" placeholder="Name" id="footer-form" style="border:1px solid #f76c6c">
-				<input type="text" name="Email" placeholder="Email" id="footer-form" style="border:1px solid #f76c6c">
-				<button type="button" name="butoni" id="footer-button">SUBMIT</button>
-		</div>
-		</div>
-		<div class="copyrights" style="margin-bottom:-10px">
-			<h3>Copyrights &copy 2020 All Rights Reserved</h3>
-		</div>
-  
+            function showPosition(position) {
+            x.innerHTML = "Latituda: " + position.coords.latitude + "<br>Longituda: " + position.coords.longitude;
+            }
+            </script>
+            </div>
+        <div class="inner-footer" style="padding-top:50px;">
+            <h3>QASJE E SHPEJTE</h3>
+        </br>
+            <div class="footer-links"><a href="https://www.biblioteka-ks.org/">Biblioteka Kombetare</a><br/></div>
+            <div class="footer-links"><a href="https://www.uni-pr.edu/">Universiteti  i Prishtines</a><br/></div>
+            <div class="footer-links"><a href="http://www.biblioteka-pr.org/sq/Home">Biblioteka Hivzi Sulejmani</a><br/></div>
+            <div class="footer-links"><a href="http://dukagjinigroup.com/project/libraria-dukagjini/">Libraria Dukagjini</a><br/></div>
+        </div>
+        <div class="inner-footer" style="padding-top:50px;">
+            <h3>NGA NE PER JU :)</h3>
+        </br>
+            <p>
+                Kjo faqe ofron shume mundesi per adhuruesit e librit,ku pervec blerjes dhe leximit online ju mund te ndani eksperiencen tuaj edhe me te tjeret.Kenaqesia juaj ne lexim ,kenaqesia jone ne pune !
+            </p>
+        </br>
+            <p style="text-align:right;"><a href="#" style="text-decoration: none;color:#f76c6c">Read More</a></p>
+        </div>
+        <div class="inner-footer" style="padding-top:50px;">
+            <h3>SYGJERIME DHE VEREJTJE</h3>
+        </br>
+                <input type="text" name="Emri" placeholder="Name" id="footer-form" style="border:1px solid #f76c6c">
+                <input type="text" name="Email" placeholder="Email" id="footer-form" style="border:1px solid #f76c6c">
+                <button type="button" name="butoni" id="footer-button">SUBMIT</button>
+        </div>
+        </div>
+        <div class="copyrights" style="margin-bottom:-10px">
+            <h3>Copyrights &copy 2019 All Rights Reserved</h3>
+        </div>
+    </footer>
   
 <script src="../Projekti per Internet/all.min.js">
 </script>
