@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Zonja e zezë</title>
+		<title>Zonja e zezë, Nexhmije Hoxha</title>
+		<meta charset="utf-8"/>
         <link href="css\stilizimi.css" rel="stylesheet"/>
 		<link href="css\stilizimiLibri.css" rel="stylesheet"/>
 		<link href="all.min.css" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="jscript\shop-account.js"></script>
+		<script src="jscript\counter.js"></script>
         <style>
             .navbar li a{
                 padding-top:0;
@@ -21,133 +25,139 @@
 				vertical-align: middle;
 			}
 			
-        </style>
+		</style>
+		
 
     </head>
     <body>
         <header id="head" style="position: fixed">
             <ul class="navbar">
-                <li><a href="Projekti.html">HOME PAGE</a></li>
-                <li><a href="#">STYLE DEMO</a></li>
-                <li><a href="#">FULL WIDTH</a></li>
-                <li><a href="#">PORTOFOLIO</a></li>
-                <li><a href="#">GALLERY</a></li>
-                <li><a href="#">DROPDOWN</a></li>
-                
-                <div class="Search">
-                  <input type="text" name="textfield" id="textfield" placeholder="Search our website...">
-                  <button align="right" type="button" id="header-button">Search</button>
-                </div>
-                
+                <li><a href="Projekti.html">BALLINA</a></li>
+    <li><a href="ngjarjet.html">NGJARJET</a></li>
+    <li><a href="Rekomandimet.html">REKOMANDIMET</a></li>
+    <li>
+              <div class="dropdown">
+        <div class="dropbtn"><a href="#">TE TJERA</a></div>
+        <div class="dropdown-content" style="background-color:#3b3a4a;opacity: 0.9"> <a href="filma.html" style="color: white">Filma të bazuar në libra</a> <a href="gjuhe.html" style="color:  white">Libra në gjuhë të huaja</a> </div>
+      </div>
+            </li>
+    <button class="shop-cart" id="shop" onclick="teksti()"><span style="color: antiquewhite;vertical-align: middle;"><i class="fas fa-shopping-cart center"></i></span></button>
+    <button class="shop-cart" id="account" style="right:370px;"><span style="color: antiquewhite;"><i class="fas fa-user-alt"></i></span></button>
+    <div class="Search">
+              <input type="text" name="textfield" id="textfield" placeholder="Search our website...">
+              <button align="right" type="button" id="header-button">Search</button>
+            </div>
               </ul>
         </header>
 		<br/>
 		<br/>
-		<br/>
-    <div id="content" style="width: 100%">
+		
+	<div class="content">
+		<div class="shop-view" id="shop-view"><div id="result"></div>
+							   <button type="button" id="buy" onclick="resetCount(),window.location.href='C:/Users/HP/Desktop/Projekti per Internet/Blej.html'"><a href="Blej.html" style="text-decoration: none;color:inherit">Blej</a></button></div>
+		<div class="account-view" id="account-view">
+			<ul>
+				<li><i class="fas fa-user-alt"></i>Account</li>
+				<li><i class="fas fa-sign-out-alt"></i>Log out</li>
+				<li><i class="fas fa-book-open"></i>MyLibrary</li>
+			</ul>
+		</div>
 	  <div style="display: inline">
             <div style="display: block;width:70%;float: left">
 				<div id="libri">
-				<img src="Projekti per Internet/librat/zonja-e-zese.jpg" alt="" style="margin:15%"/>
+				<img src="fotot/zonja-e-zese.jpg" alt="foto" style="margin:15%"/>
+				<h2>Cmimi<br/>7.00€</h2>
 				</div>
 				<div id="permbajtja">
-					<p><h2  style="color: #f76c6c;text-align: center">ZONJA E ZEZË, NEXHMIJE HOXHA</h2></p>
+					<p><h2  style="color: #161626;text-align: center">Zonja e zezë,Nexhmije Rexha</h2></p>
 				<br/>
 				<br/>
-				<p><h3 style="color:#f76c6c">Fahri Balliu</h3></p>
+				<p><h3 style="color:#161626">Fahri Balliu</h3></p>
 			<br/>
 			<br/>
-			<p>Saga e keqe e komunizmit jep motërzimin e saj edhe në rapotet burrë-grua, kur është fjala për një çift tiranësh. Shembujt e saj janë aq mbresëlënës, saqë çifti tepër i përfolur Makbeth-Ledi Makbeth, përpara tyre, ngjan disi i zbehtë. Po të shihni pasqyrimin e çiftit të famshëm shekspirian në versionet rus, rumun dhe shqiptar, do të vëmë re një skenë disi të habitshme: sa më i zi të ketë qënë personazhi, aq më të lehtë e ka pasur dënimin.</p>
+			<p>
+Saga e keqe e komunizmit jep motërzimin e saj edhe në rapotet burrë-grua, kur është fjala për një çift tiranësh. Shembujt e saj janë aq mbresëlënës, saqë çifti tepër i përfolur Makbeth-Ledi Makbeth, përpara tyre, ngjan disi i zbehtë. Po të shihni pasqyrimin e çiftit të famshëm shekspirian në versionet rus, rumun dhe shqiptar, do të vëmë re një skenë disi të habitshme: sa më i zi të ketë qënë personazhi, aq më të lehtë e ka pasur dënimin.	</p>
 			<br/>
 			<br/>
+			<p id="Rating">Rating:</p>
 			<span class="fa fa-star checked"></span>
-		  
-<span class="fa fa-star checked"></span>
-<span class="fa fa-star"></span>
-<span class="fa fa-star"></span>
-<span class="fa fa-star"></span>
-			
-			</div>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+
+            <div id="butonat" style="width:70%">
+                <div class="but"><button id="blej" onclick="clickCounter()"><span>Shto në shportë</span></button></div>
+                <div class="but"><button id="lexo"><span>Lexo</span></button></div>
+                  
+            </div>
+        </div>
+        <p>&nbsp;</p>
+       
 		</div>
+
 		
 
       </div>
 	
 	
           <p>&nbsp;</p>
-      <div id="sidebar" style="display: block;float:right;background-color:#f76c6c">
+      <div id="sidebar">
 			<br/>
 			<h3 style="text-align: center">Kategoritë</h3><br/><br/>
 			<ul>
-			<li><a href="Biografi.html">~Biografi</a></li><br/><br/>
-			<li><a href="shkenca.html">~Shkenca sociale & Psikologji</a></li><br/><br/>
-			<li><a href="sigurime.html">~Sigurime</a></li><br/><br/>
-			<li><a href="shkenca-politike.html">~Shkenca politike</a></li><br/><br/>
-			<li><a href="perralla.html">~Përralla</a></li><br/><br/>
-			<li><a href="letersi.html">~Letërsi shqiptare</a></li><br/><br/>
-			<li><a href="filozofi.html">~Filozofi & Sociologji</a></li><br/><br/>
-			<li><a href="histori.html">~Histori</a></li><br/><br/>
-			<li><a href="ekonomi.html">~Ekonomi & Biznes</a></li><br/><br/>
-			<li><a href="intervista.html">~Intervista</a></li><br/><br/>
-			<li><a href="roman.html">~Roman</a></li><br/><br/>
-			<li><a href="femije.html">~Libra për fëmijë</a></li><br/><br/>
-			<li><a href="poezi.html">~Poezi</a></li><br/><br/>
-			<li><a href="novela">~Tregime & Novela</a></li><br/><br/>
+                <li><a href="Biografi.html"><img src="fotot/bullet.png" alt=""/>Biografi</a></li><br/><br/>
+                <li><a href="shkenca.html"><img src="fotot/bullet.png" alt=""/>Shkenca sociale & Psikologji</a></li><br/><br/>
+                <li><a href="Fantazi.html"><img src="fotot/bullet.png" alt=""/>Fantazi</a></li><br/><br/>
+                <li><a href="letersi.html"><img src="fotot/bullet.png" alt=""/>Letërsi shqiptare</a></li><br/><br/>
+                <li><a href="filozofi.html"><img src="fotot/bullet.png" alt=""/>Filozofi & Sociologji</a></li><br/><br/>
+                <li><a href="histori.html"><img src="fotot/bullet.png" alt=""/>Histori</a></li><br/><br/>
+                <li><a href="ekonomi.html"><img src="fotot/bullet.png" alt=""/>Ekonomi & Biznes</a></li><br/><br/>
+                <li><a href="femije.html"><img src="fotot/bullet.png" alt=""/>Libra për fëmijë</a></li><br/><br/>
+                <li><a href="religjioz.html"><img src="fotot/bullet.png" alt=""/>Religjioz</a></li><br/><br/>
 		</ul>
 			<hr/>
 			<br/>
 		<h3 style="text-align: center">Related books</h3>
 			<br/>
-			<br/><a href="nena-e-dashurise.html">
-		<img src="Projekti per Internet/librat/nena-e-dashurise.jpg" alt="Paris" class="center"></a>
-		<p><h2 style="text-align: center">Nëna e dashurisë</h2></p>
-			<p><h5 style="text-align: center">by Dom Lush Gjergji</h5></p>
-<br/>
-<br/>
-<img src="Projekti per Internet/librat/zonja-e-zese.jpg" alt="Paris" class="center">
-<h2 style="text-align: center">Zonja e zezë,Nexhmije Hoxha</h2>
-<h5 style="text-align: center">by Fahri Balliu</h5>
-<p>&nbsp;</p>
-	    <p>&nbsp;</p>
-	    <p>&nbsp;</p>
-	    <p>&nbsp;</p>
-	    <p>&nbsp;</p>
-
-
-
-
-
-
-      </div>
-	      <p>&nbsp;</p>
-	      <div id="butonat" style="width:70%">
-			<div class="but"><button id="cmimi">9.50€</button></div>
-			<div class="but"><button id="blej"><span>Blej</span></button></div>
-			<div class="but"><button id="lexo"><span>Lexo</span></button></div>
-		
-	  <div style="margin-top:50px">
-	    <p>&nbsp;</p>
-	    <p>&nbsp;</p>
-	    <p>&nbsp;</p>
-	    <p>&nbsp;</p>
-	    <p>&nbsp;</p>
-	   <table cellspacing="4" cellpadding="2" style="width:80%;margin-left: auto;margin-right: auto;margin-top:30px;text-align: center;color:#f76c6c ">
-	          <tbody>
-	            <tr>
-	              <th scope="col">Numri i faqeve</th>
-	              <th scope="col">Shtëpia botuese</th>
-	              
-	              <th scope="col">Kategoria</th>
-                </tr>
-	            <tr>
-	              <td>286</td>
-	              <td>Botimet 55</td>
-	              
-	              <td>Biografi</td>
-                </tr>
-         </tbody>
-        </table>
-	  </div>
+			<br/>
+		<a href="asgje-tjeter.html"><img src="fotot/asgje-tjeter.jpg" alt="foto" class="center"></a>
+		<p><h2 style="text-align: center">Asgjë tjetër, vecse e vërteta</h2></p>
+			<p><h5 style="text-align: center">Giulia Bongiorno</h5></p>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+		</div>
+		<table cellspacing="0" cellpadding="5">
+			<tr>
+				<td></td>
+				<th>Nr.i faqeve</th>
+				<th>Perkthyesi</th>
+				<th>Sh.botuese</th>
+				<th>Viti botimit</th>
+				<th>Recezioni</th>
+			</tr>
+			<tr>
+				<td>Botimi 1</td>
+				<td>270</td>
+				<td></td>
+				<td>Dukagjini</td>
+				<td>2013</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>Botimi 2</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+		</table>
+	  
     </div>
 
 	
@@ -155,44 +165,65 @@
 <br/>
 <br/>
 <br/>
-
-
-        <footer>
+		<footer>
 			<div class="footer">
-		<div class="inner-footer">
-			<h3>CONTACT DETAILS</h3>
-			<p>Conavllisituso vestas mus pellentum aenean sapibulum in aliqun volut pat integest nulla.</p>
-			<p>Tel:<a href="#" style="color:#f76c6c;text-decoration: none;">xxx xxxxxx</a><br/>
-			Fax:<a href="#" style="color:#f76c6c;text-decoration: none;">xxx xxxxxx</a><br/>
-			Email:contact@bllablla.com</p>	
-		</div>
-		<div class="inner-footer">
-			<h3>QUICK LINKS</h3>
-			<div class="footer-links"><a href="#">Link text here</a><br/></div>
-			<div class="footer-links"><a href="#">Link text here</a><br/></div>
-			<div class="footer-links"><a href="#">Link text here</a><br/></div>
-			<div class="footer-links"><a href="#">Link text here</a><br/></div>
-		</div>
-		<div class="inner-footer">
-			<h3>FROM THE BLOG</h3>
-			<p><b>Blog Post Title</b></p>
-			<p>
-				Posted by Admin sdhfgdjhf vestibuum egestibulum eu justo convallis ague estas aenean elit intesque sed fecilispede estibulum.
-			</p>
-			<p style="text-align:right;"><a href="#" style="text-decoration: none;color:#f76c6c">Read More</a></p>
-		</div>
-		<div class="inner-footer">
-			<h3>GRAB OUR NEWSLETTER</h3>
-				<input type="text" name="Emri" placeholder="Name" id="footer-form" style="border:1px solid #f76c6c">
-				<input type="text" name="Email" placeholder="Email" id="footer-form" style="border:1px solid #f76c6c">
-				<button type="button" name="butoni" id="footer-button">SUBMIT</button>
-		</div>
-		</div>
-<div class="copyrights">
-			<h3>Copyrights &copy 2019 All Rights Reserved</h3>
-		</div>
-
-        </footer>
-<script src="all.min.js"></script>
+				<div class="inner-footer" style="padding-top:50px;">
+					<h3>KONTAKTI</h3>
+				</br>
+					<p>Per kontakt me te shpejte me ne klikoni me poshte</p>
+					<p>Tel:<a href="#" style="color:#f76c6c;text-decoration: none;">+38344111111</a><br/>
+					Fax:<a href="#" style="color:#f76c6c;text-decoration: none;">(07) 30367095</a><br/><br/>
+					Email:blejlibra@hotmail.com</p><br/>
+					<p>Klikoni më poshtë për lokacion .</p>
+		
+					<button onclick="getLocation()" type="button" name="butoni" id="footer-button" >Lokacioni</button>
+								<p id="demo"></p>
+					<script>
+					var x = document.getElementById("demo");
+		
+					function getLocation() {
+					if (navigator.geolocation) {
+						navigator.geolocation.getCurrentPosition(showPosition);
+					} else { 
+						x.innerHTML = "Geolocation is not supported by this browser.";
+					}
+					}
+		
+					function showPosition(position) {
+					x.innerHTML = "Latituda: " + position.coords.latitude + "<br>Longituda: " + position.coords.longitude;
+					}
+					</script>
+					</div>
+				<div class="inner-footer" style="padding-top:50px;">
+					<h3>QASJE E SHPEJTE</h3>
+				<br/>
+					<div class="footer-links"><a href="https://www.biblioteka-ks.org/">Biblioteka Kombetare</a><br/></div>
+					<div class="footer-links"><a href="https://www.uni-pr.edu/">Universiteti  i Prishtines</a><br/></div>
+					<div class="footer-links"><a href="http://www.biblioteka-pr.org/sq/Home">Biblioteka Hivzi Sulejmani</a><br/></div>
+					<div class="footer-links"><a href="http://dukagjinigroup.com/project/libraria-dukagjini/">Libraria Dukagjini</a><br/></div>
+				</div>
+				<div class="inner-footer" style="padding-top:50px;">
+					<h3>NGA NE PER JU :)</h3>
+				<br/>
+					<p>
+						Kjo faqe ofron shume mundesi per adhuruesit e librit,ku pervec blerjes dhe leximit online ju mund te ndani eksperiencen tuaj edhe me te tjeret.Kenaqesia juaj ne lexim ,kenaqesia jone ne pune !
+					</p>
+				<br/>
+					<p style="text-align:right;"><a href="#" style="text-decoration: none;color:#f76c6c">Read More</a></p>
+				</div>
+				<div class="inner-footer" style="padding-top:50px;">
+					<h3>SYGJERIME DHE VEREJTJE</h3>
+				<br/>
+						<input type="text" name="Emri" placeholder="Name" id="footer-form" style="border:1px solid #f76c6c">
+						<input type="text" name="Email" placeholder="Email" id="footer-form" style="border:1px solid #f76c6c">
+						<button type="button" name="butoni" id="footer-button"><a href="mailto:costumer-service@bookey.com" style="color: inherit">SUBMIT</a></button>
+				</div>
+				</div>
+				<div class="copyrights" style="margin-bottom:-10px">
+					<h3>Copyrights &copy 2019 All Rights Reserved</h3>
+				</div>
+		</footer>
+<script src="../Projekti per Internet/all.min.js">
+</script>
 </body>
 </html>
