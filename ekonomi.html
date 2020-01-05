@@ -82,13 +82,19 @@
         </style>
 
     </head>
-	<body>
+    <body>
         <header id="head" style="position: fixed">
             <ul class="navbar">
-                <li><a href="indexi.html">BALLINA</a></li>
-                <li><a href="ngjarjet.html">NGJARJET</a></li>
-                <li><a href="Rekomandimet.html">REKOMANDIMET</a></li>
-                <li><a href="te-tjera.html">TE TJERA</a></li>
+				<li><a href="Projekti.html">ballina</a></li>
+                <li><a href="ngjarjet.html">ngjarjet</a></li>
+                <li><a href="Rekomandimet.html">rekomandimet</a></li>
+                <li><div class="dropdown">
+					<div class="dropbtn"><a href="#">të tjera</a></div>
+					<div class="dropdown-content" style="background-color:#3b3a4a;opacity: 0.9">
+					  <a href="drag and drop.html" style="color: white">Autorët e preferuar</a>
+					  <a href="stafi.html" style="color:  white">Stafi</a>
+					</div>
+				  </div></li>
 
 				<button class="shop-cart" id="shop" onclick="teksti()"><span style="color: antiquewhite;vertical-align: middle;"><i class="fas fa-shopping-cart center"></i></span></button>
 				<button class="shop-cart" id="account" style="right:370px;"><span style="color: antiquewhite;"><i class="fas fa-user-alt"></i></span></button>
@@ -159,17 +165,17 @@
         </div>
         <div id="sidebar" style="width:20%;height:100%;float:left;background-color:#f76c6c;position:absolute;right:0;">
             <br/>
-	<h3 style="text-align: center">Kategoritë</h3><br/><br/>
+			<h3 style="text-align: center">Kategoritë</h3><br/><br/>
 			<ul>
-			<li><a href="Biografi.html">~Biografi</a></li><br/><br/>
-			<li><a href="shkenca.html">~Shkenca sociale & Psikologji</a></li><br/><br/>
-			<li><a href="Fantazi.html">~Fantazi</a></li><br/><br/>
-			<li><a href="letersi.html">~Letërsi shqiptare</a></li><br/><br/>
-			<li><a href="filozofi.html">~Filozofi & Sociologji</a></li><br/><br/>
-			<li><a href="histori.html">~Histori</a></li><br/><br/>
-			<li><a href="ekonomi.html">~Ekonomi & Biznes</a></li><br/><br/>
-			<li><a href="femije.html">~Libra për fëmijë</a></li><br/><br/>
-            <li><a href="religjioz.html">~Religjioz</a></li><br/><br/>
+				<li><a href="Biografi.html"><img src="fotot/bullet.png" alt=""/>Biografi</a></li><br/><br/>
+				<li><a href="shkenca.html"><img src="fotot/bullet.png" alt=""/>Shkenca sociale & Psikologji</a></li><br/><br/>
+				<li><a href="Fantazi.html"><img src="fotot/bullet.png" alt=""/>Fantazi</a></li><br/><br/>
+				<li><a href="letersi.html"><img src="fotot/bullet.png" alt=""/>Letërsi shqiptare</a></li><br/><br/>
+				<li><a href="Filozofi.html"><img src="fotot/bullet.png" alt=""/>Filozofi & Sociologji</a></li><br/><br/>
+				<li><a href="histori.html"><img src="fotot/bullet.png" alt=""/>Histori</a></li><br/><br/>
+				<li><a href="ekonomi.html"><img src="fotot/bullet.png" alt=""/>Ekonomi & Biznes</a></li><br/><br/>
+				<li><a href="femije.html"><img src="fotot/bullet.png" alt=""/>Libra për fëmijë</a></li><br/><br/>
+				<li><a href="religjioz.html"><img src="fotot/bullet.png" alt=""/>Religjioz</a></li><br/><br/>
 		</ul>
 			<hr/>
 			<br/>
@@ -177,7 +183,7 @@
 			<br/>
 			<br/>
 		<img src="fotot/Charles%20Duhigg.jpeg" alt="Charles" class="center" style="box-shadow: 0 0 5px #161626;">
-		<p><a href="https://en.wikipedia.org/wiki/Charles_Duhigg"><h2 style="text-align: center">Charles Duhigg</h2></a></p>
+		<p><a href="https://en.wikipedia.org/wiki/Charles_Duhigg"><h2 style="text-align: center;color:#161626;">Charles Duhigg</h2></a></p>
             <p><h4 style="text-align: center">Autore e njohur në këtë zhanër</h4></p>
 		<p style="text-align: center">
 			Charles Duhigg (lindur në 1974) është një gazetar amerikan dhe autori qe ka fituar me shume se 1 çmimë Pulitzer. Ai ishte një reporter për The New York Times dhe është autor i dy librave mbi zakonet dhe produktivitetin. Për më shumë informacione, klikoni 
@@ -185,7 +191,7 @@
           <br/>
 		<br/>
 		<img src="fotot/Philip-Knight.jpg" alt="Philip" class="center" style="box-shadow: 0 0 5px #161626;"></br>
-		<a href="https://en.wikipedia.org/wiki/Phil_Knight"><h2 style="text-align: center">Phil Knight</h2></p></a>
+		<a href="https://en.wikipedia.org/wiki/Phil_Knight"><h2 style="text-align: center;color:#161626;">Phil Knight</h2></p></a>
     <p><h4 style="text-align: center">Autore e njohur në këtë zhanër</h4></p>
 		<p style="text-align: center">
 			Philip Hampson "Phil" Knight, pseudonimi i të cilit është "Buck"(lindur 24 shkurt 1938), është një magnat afarist dhe filantrop. Një vendas i Oregon, ai është bashkëthemeluesi dhe kryetari aktual emeritus i Nike, Inc., dhe më parë ka shërbyer si kryetar dhe CEO i kompanisë. Për më shumë informacione, klikoni 
@@ -243,7 +249,7 @@
 			</br>
 					<input type="text" name="Emri" placeholder="Name" id="footer-form" style="border:1px solid #f76c6c">
 					<input type="text" name="Email" placeholder="Email" id="footer-form" style="border:1px solid #f76c6c">
-					<button type="button" name="butoni" id="footer-button">SUBMIT</button>
+					<button type="button" name="butoni" id="footer-button"><a href="mailto:costumer-service@bookey.com" style="color: inherit">SUBMIT</a></button>
 			</div>
 			</div>
 			<div class="copyrights" style="margin-bottom:-10px">
