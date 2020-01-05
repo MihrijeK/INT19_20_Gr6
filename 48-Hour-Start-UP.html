@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>48 Hour Start UP</title>
-        <link href="..\css\stilizimi.css" rel="stylesheet"/>
-		<link href="..\css\stilizimiLibri.css" rel="stylesheet"/>
-		<link href="..\css\all.min.css" rel="stylesheet">
+		<title>48 Hour Start-Up</title>
+		<meta charset="utf-8"/>
+        <link href="css\stilizimi.css" rel="stylesheet"/>
+		<link href="css\stilizimiLibri.css" rel="stylesheet"/>
+		<link href="all.min.css" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="jscript\shop-account.js"></script>
+		<script src="jscript\counter.js"></script>
         <style>
             .navbar li a{
                 padding-top:0;
@@ -21,130 +25,143 @@
 				vertical-align: middle;
 			}
 			
-        </style>
+		</style>
+		
 
     </head>
     <body>
         <header id="head" style="position: fixed">
             <ul class="navbar">
-               <li><a href="indexi.html">BALLINA</a></li>
-                <li><a href="ngjarjet.html">NGJARJET</a></li>
-                <li><a href="Rekomandimet.html">REKOMANDIMET</a></li>
-                <li><a href="te-tjera.html">TE TJERA</a></li>
-                
+				<li><a href="Projekti.html">ballina</a></li>
+                <li><a href="ngjarjet.html">ngjarjet</a></li>
+                <li><a href="Rekomandimet.html">rekomandimet</a></li>
+                <li><div class="dropdown">
+					<div class="dropbtn"><a href="#">të tjera</a></div>
+					<div class="dropdown-content" style="background-color:#3b3a4a;opacity: 0.9">
+					  <a href="drag and drop.html" style="color: white">Autorët e preferuar</a>
+					  <a href="stafi.html" style="color:  white">Stafi</a>
+					</div>
+				  </div></li>
+
+				<button class="shop-cart" id="shop" onclick="teksti()"><span style="color: antiquewhite;vertical-align: middle;"><i class="fas fa-shopping-cart center"></i></span></button>
+				<button class="shop-cart" id="account" style="right:370px;"><span style="color: antiquewhite;"><i class="fas fa-user-alt"></i></span></button>
                 <div class="Search">
                   <input type="text" name="textfield" id="textfield" placeholder="Search our website...">
-                  <button align="right" type="button" id="header-button">Search</button>
+                  <button type="button" id="header-button">Search</button>
                 </div>
-                
               </ul>
         </header>
 		<br/>
 		<br/>
-		<br/>
-    <div id="content" style="width: 100%">
+		
+	<div class="content">
+		<div class="shop-view" id="shop-view"><div id="result"></div>
+							   <button type="button" id="buy" onclick="resetCount(),window.location.href='Blej.html'">Blej</button></div>
+		<div class="account-view" id="account-view">
+			<ul>
+				<li><i class="fas fa-user-alt"></i>Account</li>
+				<li><i class="fas fa-sign-out-alt"></i>Log out</li>
+				<li><i class="fas fa-book-open"></i>MyLibrary</li>
+			</ul>
+		</div>
 	  <div style="display: inline">
             <div style="display: block;width:70%;float: left">
 				<div id="libri">
-				<img src="../Projekti-ne-lenden-Interneti/librat/48 Hour Start-UP.jpg" alt="48 Hour Start-UP" style="margin:15%"/>
+				<img src="fotot/48%20Hour%20Start-UP.jpg" alt="foto" style="margin:15%"/>
+				<h2>Cmimi</br>30.00€</h2>
 				</div>
 				<div id="permbajtja">
-					<p><h2  style="color: #f76c6c;text-align: center">48 Hour Start UP</h2></p>
+					<p><h2  style="color: #161626;text-align: center">48 Hour Start UP</h2></p>
 				<br/>
 				<br/>
-				<p><h3 style="color:#f76c6c">Fraser Doherty</h3></p>
+				<p><h3 style="color:#161626">Fraser Doherty</h3></p>
 			<br/>
 			<br/>
-          <blockquote>
 			<p>Fraser Doherty’s 48-Hour Start-Up is your handy and essential cheat sheet to starting your own business giving the key steps for developing an idea and getting it to market quickly.
 
 Almost everyone dreams of starting their own business but very few do. But what if it only had to be a decision of a weekend and it didn’t cost a fortune?
 
-In 48-Hour Start-Up, Fraser Doherty uses his experience building a multi-million-dollar company to attempt an experiment; starting with a blank piece of paper, he sets out to start a profitable new business over a weekend, without relying on any technical ability whatsoever. He succeeds and you can, too.
-            </p>
-              </blockquote>
+In 48-Hour Start-Up, Fraser Doherty uses his experience building a multi-million-dollar company to attempt an experiment; starting with a blank piece of paper, he sets out to start a profitable new business over a weekend, without relying on any technical ability whatsoever. He succeeds and you can, too...
+			</p>
 			<br/>
 			<br/>
+			<p id="Rating">Rating:</p>
 			<span class="fa fa-star checked"></span>
-		  
-<span class="fa fa-star checked"></span>
-<span class="fa fa-star checked"></span>
-<span class="fa fa-star checked"></span>
-<span class="fa fa-star checked"></span>
-			
-			</div>
-		</div>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+
+            <div id="butonat" style="width:70%">
+                <div class="but"><button id="blej" onclick="clickCounter()"><span>Shto në shportë</span></button></div>
+                <div class="but"><button id="lexo"><span>Lexo</span></button></div>
+                  
+            </div>
         </div>
+        <p>&nbsp;</p>
+       
+		</div>
+		
+
+      </div>
+	
+	
           <p>&nbsp;</p>
-      <div id="sidebar" style="display: block;float:right;background-color:#f76c6c">
+      <div id="sidebar">
 			<br/>
 			<h3 style="text-align: center">Kategoritë</h3><br/><br/>
 			<ul>
-				<li><a href="Biografi.html">~Biografi</a></li><br/><br/>
-                <li><a href="shkenca.html">~Shkenca sociale & Psikologji</a></li><br/><br/>
-                <li><a href="Fantazi.html">~Fantazi</a></li><br/><br/>
-                <li><a href="letersi.html">~Letërsi shqiptare</a></li><br/><br/>
-                <li><a href="filozofi.html">~Filozofi & Sociologji</a></li><br/><br/>
-                <li><a href="histori.html">~Histori</a></li><br/><br/>
-                <li><a href="ekonomi.html">~Ekonomi & Biznes</a></li><br/><br/>
-                <li><a href="femije.html">~Libra për fëmijë</a></li><br/><br/>
-                <li><a href="religjioz.html">~Religjioz</a></li><br/><br/>
+				<li><a href="Biografi.html"><img src="fotot/bullet.png" alt=""/>Biografi</a></li><br/><br/>
+				<li><a href="shkenca.html"><img src="fotot/bullet.png" alt=""/>Shkenca sociale & Psikologji</a></li><br/><br/>
+				<li><a href="Fantazi.html"><img src="fotot/bullet.png" alt=""/>Fantazi</a></li><br/><br/>
+				<li><a href="letersi.html"><img src="fotot/bullet.png" alt=""/>Letërsi shqiptare</a></li><br/><br/>
+				<li><a href="Filozofi.html"><img src="fotot/bullet.png" alt=""/>Filozofi & Sociologji</a></li><br/><br/>
+				<li><a href="histori.html"><img src="fotot/bullet.png" alt=""/>Histori</a></li><br/><br/>
+				<li><a href="ekonomi.html"><img src="fotot/bullet.png" alt=""/>Ekonomi & Biznes</a></li><br/><br/>
+				<li><a href="femije.html"><img src="fotot/bullet.png" alt=""/>Libra për fëmijë</a></li><br/><br/>
+				<li><a href="religjioz.html"><img src="fotot/bullet.png" alt=""/>Religjioz</a></li><br/><br/>
 		</ul>
 			<hr/>
 			<br/>
 		<h3 style="text-align: center">Related books</h3>
 			<br/>
-			<br/><a href="10-Qelesat-E-Suksesit.html">
-		<img src="../Projekti-ne-lenden-Interneti/librat/10-celesat-e-suksesit.jpg"  alt="10-celesat-e-suksesit" class="center"></a>
-		<p><h2 style="text-align: center">10 Çelësat e suksesit</h2></p>
-			<p><h5 style="text-align: center">by Dr. Ibrahim el-Fekij</h5></p>
-<br/>
-<br/>
-<img src="../Projekti per Internet1/Projekti per Internet/librat/zonja-e-zese.jpg" alt="Paris" class="center">
-<h2 style="text-align: center">Zonja e zezë,Nexhmije Hoxha</h2>
-<h5 style="text-align: center">by Fahri Balliu</h5>
-<p>&nbsp;</p>
-	    <p>&nbsp;</p>
-	    <p>&nbsp;</p>
-	    <p>&nbsp;</p>
-	    <p>&nbsp;</p>
-
-
-      </div>
-	      <p>&nbsp;</p>
-	      <div id="butonat" style="width:70%">
-			<div class="but"><button id="cmimi">30.00€</button></div>
-			<div class="but"><button id="blej"><span>Blej</span></button></div>
-			<div class="but"><button id="lexo"><span>Lexo</span></button></div>
-		
-	  <div style="margin-top:50px">
-	    <p>&nbsp;</p>
-	    <p>&nbsp;</p>
-	    <p>&nbsp;</p>
-	    <p>&nbsp;</p>
-	    <p>&nbsp;</p>
-	   <table cellspacing="4" cellpadding="2" style="width:80%;margin-left: auto;margin-right: auto;margin-top:30px;text-align: center;color:#f76c6c ">
-	          <tbody>
-	            <tr>
-	              <th scope="col">Numri i faqeve</th>
-	              <th scope="col">Shtëpia botuese</th>
-	              
-	              <th scope="col">Kategoria</th>
-                </tr>
-	            <tr>
-	              <td>224</td>
-	              <td>HarperCollins Publishers</td>
-	              
-	              <td>Ekonomi & Biznes</td>
-                </tr>
-         </tbody>
-        </table>
-	  </div>
-    </div>
-
-<br/>
-<br/>
-<br/>
+			<br/>
+		<a href="10-Qelesat-E-Suksesit.html"><img src="fotot\10-celesat-e-suksesit.jpg" alt="foto" class="center"></a>
+		<p><h2 style="text-align: center">10 Çelesat e Suksesit</h2></p>
+			<p><h5 style="text-align: center">nga Dr.Ibrahim el-Fekir</h5></p>
+        <br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+        <br/>
+        <!--<a href="#"><img src="fotot\harry-potter-dhe-i-burgosuri-i-azkabanit.jpg" alt="foto" class="center"></a>
+        <h2 style="text-align: center">Harry Potter</br>dhe i burgosuri i Azkabanit</h2>
+        <h5 style="text-align: center">by J.K.Rowlings</h5> -->
+		</div>
+		<table cellspacing="0" cellpadding="5">
+			<tr>
+				<td></td>
+				<th>Nr.i faqeve</th>
+				<th>Perkthyesi</th>
+				<th>Sh.botuese</th>
+				<th>Viti botimit</th>
+			</tr>
+			<tr>
+                <td>Botimi 1</td>
+				<td>224</td>
+				<td>--</td>
+				<td>HarperCollins Publishers</td>
+				<td>2010</td>
+			</tr>
+			<!-- <tr>
+				<td>Botimi 2</td>
+				<td>350</td>
+				<td>sdhcsjhd</td>
+				<td>dukagjini</td>
+				<td>2005</td>
+				<td>hsdjhv</td>
+			</tr> -->
 		</table>
 <br/>
 <br/>
@@ -155,61 +172,67 @@ In 48-Hour Start-Up, Fraser Doherty uses his experience building a multi-million
 <br/>
 <br/>
 <br/>
-<div class="footer">
-		<div class="inner-footer">
+<footer>
+	<div class="footer">
+		<div class="inner-footer" style="padding-top:50px;">
 			<h3>KONTAKTI</h3>
-			<p>Për kontakt më të shpejtë me ne klikoni më poshtë</p>
+		</br>
+			<p>Per kontakt me te shpejte me ne klikoni me poshte</p>
 			<p>Tel:<a href="#" style="color:#f76c6c;text-decoration: none;">+38344111111</a><br/>
-			Fax:<a href="#" style="color:#f76c6c;text-decoration: none;">(07) 30367095</a><br/>
-			Email:blejlibra@hotmail.com</p>
-            <p>Klikoni më poshtë për lokacion .</p>
+			Fax:<a href="#" style="color:#f76c6c;text-decoration: none;">(07) 30367095</a><br/></br>
+			Email:blejlibra@hotmail.com</p></br>
+			<p>Klikoni më poshtë për lokacion .</p>
 
-<button onclick="getLocation()" type="button" name="butoni" id="footer-button" >Lokacioni</button>
-            <p id="demo"></p>
-<script>
-var x = document.getElementById("demo");
+			<button onclick="getLocation()" type="button" name="butoni" id="footer-button" >Lokacioni</button>
+						<p id="demo"></p>
+			<script>
+			var x = document.getElementById("demo");
 
-function getLocation() {
-  if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(showPosition);
-  } else { 
-    x.innerHTML = "Geolocation is not supported by this browser.";
-  }
-}
+			function getLocation() {
+			if (navigator.geolocation) {
+				navigator.geolocation.getCurrentPosition(showPosition);
+			} else { 
+				x.innerHTML = "Geolocation is not supported by this browser.";
+			}
+			}
 
-function showPosition(position) {
-  x.innerHTML = "Latituda: " + position.coords.latitude + "<br>Longituda: " + position.coords.longitude;
-}
-</script>
-
-		</div>
-		<div class="inner-footer">
-			<h3>QASJE E SHPEJT&#203</h3>
-			<div class="footer-links"><a href="https://www.biblioteka-ks.org/">Biblioteka Kombe&#235tare</a><br/></div>
-			<div class="footer-links"><a href="https://www.uni-pr.edu/">Universiteti  i Prishtin&#235s</a><br/></div>
+			function showPosition(position) {
+			x.innerHTML = "Latituda: " + position.coords.latitude + "<br>Longituda: " + position.coords.longitude;
+			}
+			</script>
+			</div>
+		<div class="inner-footer" style="padding-top:50px;">
+			<h3>QASJE E SHPEJTE</h3>
+		</br>
+			<div class="footer-links"><a href="https://www.biblioteka-ks.org/">Biblioteka Kombetare</a><br/></div>
+			<div class="footer-links"><a href="https://www.uni-pr.edu/">Universiteti  i Prishtines</a><br/></div>
 			<div class="footer-links"><a href="http://www.biblioteka-pr.org/sq/Home">Biblioteka Hivzi Sulejmani</a><br/></div>
 			<div class="footer-links"><a href="http://dukagjinigroup.com/project/libraria-dukagjini/">Libraria Dukagjini</a><br/></div>
 		</div>
-		<div class="inner-footer">
-			<h3>NGA NE P&#203R JU  :) </h3>
-			
+		<div class="inner-footer" style="padding-top:50px;">
+			<h3>NGA NE PER JU :)</h3>
+		</br>
 			<p>
-				Kjo faqe ofron shum&#235 mund&#235si p&#235r adhuruesit e librit,ku p&#235rve&#231 blerjes dhe leximit online ju mund t&#235 ndani eksperiencen tuaj edhe me t&#235 tjer&#235t. K&#235naqesia juaj n&#235 lexim ,k&#235naqesia jon&#235 n&#235 pun&#235 !
+				Kjo faqe ofron shume mundesi per adhuruesit e librit,ku pervec blerjes dhe leximit online ju mund te ndani eksperiencen tuaj edhe me te tjeret.Kenaqesia juaj ne lexim ,kenaqesia jone ne pune !
 			</p>
+		</br>
 			<p style="text-align:right;"><a href="#" style="text-decoration: none;color:#f76c6c">Read More</a></p>
 		</div>
-		<div class="inner-footer">
-			<h3>SYGJERIME DHE V&#203REJTJE</h3>
+		<div class="inner-footer" style="padding-top:50px;">
+			<h3>SYGJERIME DHE VEREJTJE</h3>
+		</br>
 				<input type="text" name="Emri" placeholder="Name" id="footer-form" style="border:1px solid #f76c6c">
 				<input type="text" name="Email" placeholder="Email" id="footer-form" style="border:1px solid #f76c6c">
 				<button type="button" name="butoni" id="footer-button"><a href="mailto:costumer-service@bookey.com" style="color: inherit">SUBMIT</a></button>
 		</div>
 		</div>
 		<div class="copyrights" style="margin-bottom:-10px">
-			<h3>Copyrights &copy 2020 All Rights Reserved</h3>
+			<h3>Copyrights &copy 2019 All Rights Reserved</h3>
 		</div>
+</footer>
   
   
-<script src="all.min.js"></script>
+<script src="../Projekti per Internet/all.min.js">
+</script>
 </body>
 </html>
