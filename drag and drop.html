@@ -22,8 +22,21 @@
   width: 70%;
   margin: auto;
   padding: 10px;
-			height: 600px;
+			height: 300px;
 		}
+		 #key
+        {
+    width: 100%;
+  height: 300px;
+  background : url("fotot/10-celesat-e-suksesit - Copy.jpg")no-repeat;
+  position :relative;
+  -webkit-animation: mymove 5s infinite; /* Safari 4.0 - 8.0 */
+  animation: mymove 5s ;
+        }
+        @keyframes mymove {
+  from {top: 0px;}
+  to {top: 200px;}
+}
 	</style>
 			
 </head>
@@ -100,9 +113,13 @@
 	<img src="fotot/naim frasheri.jpg" draggable="true" ondragstart="drag(event)" id="drag2" width="150" height="228" alt="" >
 	
 </div></div>
-<div class="div2" style="display: block;width: 50%;float: right;border: 1px solid black;background-color:rgba(250,235,215,0.73);height:600px">
+<div class="div2" style="display: block;width: 50%;float: right;border: 1px solid black;background-color:rgba(250,235,215,0.73);height:300px">
 <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
 	</div>
+		<div style="width: 25%;margin-left:520px;margin-top:320px">
+	<a href="10-Qelesat-E-Suksesit.html"><div id="key" onclick="10-Qelesat-E-Suksesit.html()">
+        </div>
+	</a></div>
 	
 	
 	</div>
