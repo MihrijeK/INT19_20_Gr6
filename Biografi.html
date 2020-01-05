@@ -3,7 +3,7 @@
         <head>
         <meta charset="utf-8"/>
         <meta name="viewport" content="width-device-width,initial-scale-1">
-        <title>Kategoria-Fantazi</title>
+        <title>Kategoria-Biografi</title>
         <link href="css\stilizimi.css" rel="stylesheet"/>
         <link href="css\stilizimiLibri.css" rel="stylesheet"/>
         <link href="../Projekti per Internet/all.min.css" rel="stylesheet">
@@ -82,15 +82,16 @@ a {
         <body>
 <header id="head" style="position: fixed">
           <ul class="navbar">
-    <li><a href="Projekti.html">BALLINA</a></li>
-    <li><a href="ngjarjet.html">NGJARJET</a></li>
-    <li><a href="Rekomandimet.html">REKOMANDIMET</a></li>
-    <li>
-              <div class="dropdown">
-        <div class="dropbtn"><a href="#">TE TJERA</a></div>
-        <div class="dropdown-content" style="background-color:#3b3a4a;opacity: 0.9"> <a href="filma.html" style="color: white">Filma të bazuar në libra</a> <a href="gjuhe.html" style="color:  white">Libra në gjuhë të huaja</a> </div>
-      </div>
-            </li>
+    <li><a href="Projekti.html">ballina</a></li>
+    <li><a href="ngjarjet.html">ngjarjet</a></li>
+    <li><a href="Rekomandimet.html">rekomandimet</a></li>
+    <li><div class="dropdown">
+        <div class="dropbtn"><a href="#">të tjera</a></div>
+        <div class="dropdown-content" style="background-color:#3b3a4a;opacity: 0.9">
+          <a href="drag and drop.html" style="color: white">Autorët e preferuar</a>
+          <a href="stafi.html" style="color:  white">Stafi</a>
+        </div>
+      </div></li>
     <button class="shop-cart" id="shop" onclick="teksti()"><span style="color: antiquewhite;vertical-align: middle;"><i class="fas fa-shopping-cart center"></i></span></button>
     <button class="shop-cart" id="account" style="right:370px;"><span style="color: antiquewhite;"><i class="fas fa-user-alt"></i></span></button>
     <div class="Search">
@@ -189,34 +190,17 @@ a {
     <br/>
     <br/>
     <ul>
-              <li><a href="Biografi.html">~Biografi</a></li>
-              <br/>
-              <br/>
-              <li><a href="shkenca.html">~Shkenca sociale & Psikologji</a></li>
-              <br/>
-              <br/>
-              <li><a href="Fantazi.html">~Fantazi</a></li>
-              <br/>
-              <br/>
-              <li><a href="letersi.html">~Letërsi shqiptare</a></li>
-              <br/>
-              <br/>
-              <li><a href="filozofi.html">~Filozofi & Sociologji</a></li>
-              <br/>
-              <br/>
-              <li><a href="histori.html">~Histori</a></li>
-              <br/>
-              <br/>
-              <li><a href="ekonomi.html">~Ekonomi & Biznes</a></li>
-              <br/>
-              <br/>
-              <li><a href="femije.html">~Libra për fëmijë</a></li>
-              <br/>
-              <br/>
-              <li><a href="religjioz.html">~Religjioz</a></li>
-              <br/>
-              <br/>
-            </ul>
+        <li><a href="Biografi.html"><img src="fotot/bullet.png" alt=""/>Biografi</a></li><br/><br/>
+        <li><a href="shkenca.html"><img src="fotot/bullet.png" alt=""/>Shkenca sociale & Psikologji</a></li><br/><br/>
+        <li><a href="Fantazi.html"><img src="fotot/bullet.png" alt=""/>Fantazi</a></li><br/><br/>
+        <li><a href="letersi.html"><img src="fotot/bullet.png" alt=""/>Letërsi shqiptare</a></li><br/><br/>
+        <li><a href="Filozofi.html"><img src="fotot/bullet.png" alt=""/>Filozofi & Sociologji</a></li><br/><br/>
+        <li><a href="histori.html"><img src="fotot/bullet.png" alt=""/>Histori</a></li><br/><br/>
+        <li><a href="ekonomi.html"><img src="fotot/bullet.png" alt=""/>Ekonomi & Biznes</a></li><br/><br/>
+        <li><a href="femije.html"><img src="fotot/bullet.png" alt=""/>Libra për fëmijë</a></li><br/><br/>
+        <li><a href="religjioz.html"><img src="fotot/bullet.png" alt=""/>Religjioz</a></li><br/><br/>
+        </ul>
+        
     <hr/>
     <br/>
     <h3 style="text-align: center">Writers</h3>
@@ -224,13 +208,13 @@ a {
     <br/>
     <img src="fotot/blendi-fevziu.jpg" alt="Blendi Fevziu" class="center" style="box-shadow: 0 0 5px #161626;"></br>
     <a href="https://sq.wikipedia.org/wiki/Blendi_Fevziu">
-            <h2 style="text-align: center">Blendi Fevziu</h2>
+            <h2 style="text-align: center;color:#161626;">Blendi Fevziu</h2>
             </p>
             </a> <br/>
     <br/>
     <img src="fotot/ismail-kadare.jpg" alt="Ismail Kadare" class="center" style="box-shadow: 0 0 5px #161626;"></br>
     <a href="https://sq.wikipedia.org/wiki/Ismail_Kadare">
-            <h2 style="text-align: center">Ismail Kadare</h2>
+            <h2 style="text-align: center;color:#161626;">Ismail Kadare</h2>
             </p>
             </a> </div>
         </div>
@@ -249,20 +233,20 @@ a {
               <button onclick="getLocation()" type="button" name="butoni" id="footer-button" >Lokacioni</button>
               <p id="demo"></p>
               <script>
-				var x = document.getElementById("demo");
+		var x = document.getElementById("demo");
 	
-				function getLocation() {
-				if (navigator.geolocation) {
-					navigator.geolocation.getCurrentPosition(showPosition);
-				} else { 
-					x.innerHTML = "Geolocation is not supported by this browser.";
-				}
-				}
+		function getLocation() {
+		if (navigator.geolocation) {
+			navigator.geolocation.getCurrentPosition(showPosition);
+		} else { 
+			x.innerHTML = "Geolocation is not supported by this browser.";
+		}
+		}
 	
-				function showPosition(position) {
-				x.innerHTML = "Latituda: " + position.coords.latitude + "<br>Longituda: " + position.coords.longitude;
-				}
-				</script> 
+		function showPosition(position) {
+		x.innerHTML = "Latituda: " + position.coords.latitude + "<br>Longituda: " + position.coords.longitude;
+		}
+		</script> 
             </div>
     <div class="inner-footer" style="padding-top:50px;">
               <h3>QASJE E SHPEJTE</h3>
@@ -278,14 +262,14 @@ a {
             </div>
     <div class="inner-footer" style="padding-top:50px;">
               <h3>NGA NE PER JU :)</h3>
-              </br>
-              <p> Kjo faqe ofron shume mundesi per adhuruesit e librit,ku pervec blerjes dhe leximit online ju mund te ndani eksperiencen tuaj edhe me te tjeret.Kenaqesia juaj ne lexim ,kenaqesia jone ne pune ! </p>
-              </br>
+<br/>
+		<p> Kjo faqe ofron shume mundesi per adhuruesit e librit,ku pervec blerjes dhe leximit online ju mund te ndani eksperiencen tuaj edhe me te tjeret.Kenaqesia juaj ne lexim ,kenaqesia jone ne pune ! </p>
+              <br/>
               <p style="text-align:right;"><a href="#" style="text-decoration: none;color:#f76c6c">Read More</a></p>
             </div>
     <div class="inner-footer" style="padding-top:50px;">
               <h3>SYGJERIME DHE VEREJTJE</h3>
-              </br>
+              <br/>
               <input type="text" name="Emri" placeholder="Name" id="footer-form" style="border:1px solid #f76c6c">
               <input type="text" name="Email" placeholder="Email" id="footer-form" style="border:1px solid #f76c6c">
               <button type="button" name="butoni" id="footer-button"><a href="mailto:costumer-service@bookey.com" style="color: inherit">SUBMIT</a></button>
