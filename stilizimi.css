@@ -47,9 +47,13 @@ header{
 .icon-band p a{
   font-size:12px;
 }
+@font-face {
+  font-family: aclonica;
+  src: url("../Aclonica.ttf");
+}
 .contominant{
   margin-bottom:0;
-  font-family: sans-serif;
+  font-family: aclonica;
   color:#f2f2f4;
 }
 .psd{
