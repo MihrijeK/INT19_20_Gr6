@@ -1,0 +1,173 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<link rel="stylesheet" href="css\stilizimi.css">
+	<link rel="stylesheet" href="css\ngjarjet.css">
+	<style>
+		body{
+            background-image:url("fotot/drag and drop.jpg");
+            background-size: cover;
+			background-attachment: fixed;
+			background-repeat: none;
+		}
+		#div1 {
+  width: 70%;
+  margin: auto;
+  padding: 10px;
+  
+}
+		#div2{
+  width: 70%;
+  margin: auto;
+  padding: 10px;
+			height: 600px;
+		}
+	</style>
+			
+</head>
+
+<body>
+	<header style="margin:0">
+  <div class="header" style="margin-bottom: 0">
+    <div>
+      <div style="float: left">
+        <h1 class="contominant">CONTOMINANT</h1>
+        <p class="psd">Free PSD website template</p>
+      </div>
+      <div class="icon-band">
+        <ul>
+          <li> <a href="https://www.linkedin.com/"> <img id="image1" class="img-fluid" src="fotot\linkedin-icon-dark.png" onmouseover="setNewImage1();" onmouseout="setOldImage1()" alt=""/> </a> </li>
+          <li> <a href="https://twitter.com/"> <img id="image2" class="img-fluid" src="fotot\twitter-icon-dark.png" onmouseover="setNewImage2()" onmouseout="setOldImage2()" alt=""/> </a> </li>
+          <li> <a href="https://www.pinterest.com/"> <img id="image3" class="img-fluid" src="fotot\pinterest-icon-dark.jpg" onmouseover="setNewImage3();" onmouseout="setOldImage3()"   alt=""/> </a> </li>
+          <li> <a href="https://plus.google.com/"> <img id="image4" class="img-fluid" src="fotot\googleplus-icon-dark.png" onmouseover="setNewImage4()" onmouseout="setOldImage4()" alt=""/> </a> </li>
+        </ul>
+		  <br/>
+        <p style="margin-right:10px"> <a href="#">Sign Up</a> | <a href="#">Log In</a> | <a href="#">RSS Feeds</a> | <a href="#">Archived News</a> </p>
+      </div>
+    </div>
+  </div>
+  <div class="navi">
+	<ul class="navbar">
+	  <li><a href="Projekti.html">BALLINA</a></li>
+	  <li><a href="#">NGJARJET</a></li>
+	  <li><a href="#">GAZETA</a></li>
+	  <li><a href="#">GALLERY</a></li>
+	  <li><div class="dropdown">
+  <div class="dropbtn"><a href="#">KATEGORITE</a></div>
+  <div class="dropdown-content" style="background-color:#3b3a4a;opacity: 0.9;color: black">
+    <a href="Biografi.html" style="color: white">Biografi</a>
+    <a href="shkenca-sociale.html" style="color:  white">Shkenca sociale & psikologjike</a>
+    <a href="shkenca-politike.html" style="color:  white">Shkenca politike</a>
+    <a href="perralla.html" style="color:  white">Përralla</a>
+    <a href="letersi-shqiptare.html" style="color:  white">Letërsi shqiptare</a>
+    <a href="filozofi-dhe-sociologji.html" style="color:  white">Filozofi & socilogji</a>
+    <a href="histori.html" style="color:  white">Histori</a>
+    <a href="ekonomi-dhe-biznes.html" style="color:  white">Ekonomi & biznes</a>
+    <a href="roman.html" style="color:  white">Roman</a>
+    <a href="libra-per-femije.html" style="color:  white">Libra për fëmijë</a>
+    <a href="poezi.html" style="color:  white">Poezi</a>
+    <a href="tregime-dhe-novela.html" style="color:  white">Tregime & novela</a>
+    <a href="libra-religjioz.html" style="color:  white">Libra religjioz</a>
+    <a href="fantazi.html" style="color:  white">Fantazi</a>
+  </div>
+</div></li>
+		<li><div class="dropdown">
+  <div class="dropbtn"><a href="#">TE TJERA</a></div>
+  <div class="dropdown-content" style="background-color:#3b3a4a;opacity: 0.9">
+    <a href="filma.html" style="color: white">Filma të bazuar në libra</a>
+    <a href="gjuhe.html" style="color:  white">Libra në gjuhë të huaja</a>
+  </div>
+</div></li>
+		
+	  <div style="float:right;margin-top:12px;margin-right:20px">
+        <input type="text" name="textfield" id="textfield" placeholder="Search our website...">
+		<button type="button" id="header-button">Search</button>
+		  </div>
+    </ul>
+	
+	
+	
+	</div>
+</header>
+	<div style="width: 80%;margin-left: auto;margin-right: auto;background-color:rgba(250,235,215,0.73); height: 100%">
+	<h1 align="center">Eja të punojmë së bashku</h1>
+<p style="font-weight: bold">Tërhiq dhe lësho foton/fotot e shkrimtarëve të tu të preferuar, dhe na ndihmo që të shtojmë sa me shumë vepra në bazë të preferencave tua.</p>
+<div class="div1" style="display: block;width: 50%;float: left;border: 1px solid black;background-color:rgba(250,235,215,0.73);height: 100%">
+<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+	<img src="fotot/ismail-kadare.jpg" draggable="true" ondragstart="drag(event)" id="drag2" width="150" height="228" alt="" >
+	<img src="fotot/abdyl frasheri.jpg" draggable="true" ondragstart="drag(event)" id="drag2" width="150" height="228" alt="" >
+	<img src="fotot/faik konica.jpg" draggable="true" ondragstart="drag(event)" id="drag2" width="150" height="228" alt="" >
+	<img src="fotot/fan noli.jpg" draggable="true" ondragstart="drag(event)" id="drag2" width="150" height="228" alt="" >
+	<img src="fotot/gjergj fishta.jpg" draggable="true" ondragstart="drag(event)" id="drag2" width="150" height="228" alt="" >
+	<img src="fotot/gjimeni.jpg" draggable="true" ondragstart="drag(event)" id="drag2" width="150" height="228" alt="" >
+	<img src="fotot/jakov xoxa.jpg" draggable="true" ondragstart="drag(event)" id="drag2" width="150" height="228" alt="" >
+	<img src="fotot/mitrush kuteli.jpg" draggable="true" ondragstart="drag(event)" id="drag2" width="150" height="228" alt="" >
+	<img src="fotot/sami frasheri.jpg" draggable="true" ondragstart="drag(event)" id="drag2" width="150" height="228" alt="" >
+	<img src="fotot/naim frasheri.jpg" draggable="true" ondragstart="drag(event)" id="drag2" width="150" height="228" alt="" >
+	
+</div></div>
+<div class="div2" style="display: block;width: 50%;float: right;border: 1px solid black;background-color:rgba(250,235,215,0.73);height:600px">
+<div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+	</div>
+	
+	
+	</div>
+<br/>
+<br/>
+<br/>
+
+	<div class="footer">
+		<div class="inner-footer">
+			<h3>KONTAKTI</h3>
+			<p>Per kontakt me te shpejte me ne klikoni me poshte</p>
+			<p>Tel:<a href="#" style="color:#f76c6c;text-decoration: none;">+38344111111</a><br/>
+			Fax:<a href="#" style="color:#f76c6c;text-decoration: none;">(07) 30367095</a><br/>
+			Email:blejlibra@hotmail.com</p>	
+		</div>
+		<div class="inner-footer">
+			<h3>QASJE E SHPEJTE</h3>
+			<div class="footer-links"><a href="https://www.biblioteka-ks.org/">Biblioteka Kombetare</a><br/></div>
+			<div class="footer-links"><a href="https://www.uni-pr.edu/">Universiteti  i Prishtines</a><br/></div>
+			<div class="footer-links"><a href="http://www.biblioteka-pr.org/sq/Home">Biblioteka Hivzi Sulejmani</a><br/></div>
+			<div class="footer-links"><a href="http://dukagjinigroup.com/project/libraria-dukagjini/">Libraria Dukagjini</a><br/></div>
+		</div>
+		<div class="inner-footer">
+			<h3>NGA NE PER JU :)</h3>
+			
+			<p>
+				Kjo faqe ofron shume mundesi per adhuruesit e librit,ku pervec blerjes dhe leximit online ju mund te ndani eksperiencen tuaj edhe me te tjeret.Kenaqesia juaj ne lexim ,kenaqesia jone ne pune !
+			</p>
+			<p style="text-align:right;"><a href="#" style="text-decoration: none;color:#f76c6c">Read More</a></p>
+		</div>
+		<div class="inner-footer">
+			<h3>SYGJERIME DHE VEREJTJE</h3>
+				<input type="text" name="Emri" placeholder="Name" id="footer-form" style="border:1px solid #f76c6c">
+				<input type="text" name="Email" placeholder="Email" id="footer-form" style="border:1px solid #f76c6c">
+				<button type="button" name="butoni" id="footer-button">SUBMIT</button>
+		</div>
+		</div>
+		<div class="copyrights" style="margin-bottom:-10px">
+			<h3>Copyrights &copy 2019 All Rights Reserved</h3>
+		</div>
+	<script src="jquery-3.4.1.min.js"></script>
+	<script>
+	function allowDrop(ev) {
+  ev.preventDefault();
+}
+
+function drag(ev) {
+  ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+  ev.preventDefault();
+  var data = ev.dataTransfer.getData("text");
+  ev.target.appendChild(document.getElementById(data));
+}
+	</script>
+	
+       
+</body>
+</html>
