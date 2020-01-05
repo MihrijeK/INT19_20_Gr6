@@ -27,12 +27,19 @@
     <body>
         <header id="head" style="position: fixed">
             <ul class="navbar">
-                <li><a href="Projekti.html">HOME PAGE</a></li>
-                <li><a href="#">STYLE DEMO</a></li>
-                <li><a href="#">FULL WIDTH</a></li>
-                <li><a href="#">PORTOFOLIO</a></li>
-                <li><a href="#">GALLERY</a></li>
-                <li><a href="#">DROPDOWN</a></li>
+                <li><a href="Projekti.html">ballina</a></li>
+                <li><a href="ngjarjet.html">ngjarjet</a></li>
+                <li><a href="Rekomandimet.html">rekomandimet</a></li>
+                <li><div class="dropdown">
+					<div class="dropbtn"><a href="#">të tjera</a></div>
+					<div class="dropdown-content" style="background-color:#3b3a4a;opacity: 0.9">
+					  <a href="drag and drop.html" style="color: white">Autorët e preferuar</a>
+					  <a href="stafi.html" style="color:  white">Stafi</a>
+					</div>
+				  </div></li>
+
+				<button class="shop-cart" id="shop" onclick="teksti()"><span style="color: antiquewhite;vertical-align: middle;"><i class="fas fa-shopping-cart center"></i></span></button>
+				<button class="shop-cart" id="account" style="right:370px;"><span style="color: antiquewhite;"><i class="fas fa-user-alt"></i></span></button>
                 
                 <div class="Search">
                   <input type="text" name="textfield" id="textfield" placeholder="Search our website...">
@@ -78,20 +85,20 @@
 			<br/>
 			<h3 style="text-align: center">Kategoritë</h3><br/><br/>
 			<ul>
-			<li><a href="Biografi.html">~Biografi</a></li><br/><br/>
-			<li><a href="shkenca.html">~Shkenca sociale & Psikologji</a></li><br/><br/>
-			<li><a href="sigurime.html">~Sigurime</a></li><br/><br/>
-			<li><a href="shkenca-politike.html">~Shkenca politike</a></li><br/><br/>
-			<li><a href="perralla.html">~Përralla</a></li><br/><br/>
-			<li><a href="letersi.html">~Letërsi shqiptare</a></li><br/><br/>
-			<li><a href="filozofi.html">~Filozofi & Sociologji</a></li><br/><br/>
-			<li><a href="histori.html">~Histori</a></li><br/><br/>
-			<li><a href="ekonomi.html">~Ekonomi & Biznes</a></li><br/><br/>
-			<li><a href="intervista.html">~Intervista</a></li><br/><br/>
-			<li><a href="roman.html">~Roman</a></li><br/><br/>
-			<li><a href="femije.html">~Libra për fëmijë</a></li><br/><br/>
-			<li><a href="poezi.html">~Poezi</a></li><br/><br/>
-			<li><a href="novela">~Tregime & Novela</a></li><br/><br/>
+			<li><a href="Biografi.html"><img src="fotot/bullet.png" alt=""/>Biografi</a></li><br/><br/>
+			<li><a href="shkenca.html"><img src="fotot/bullet.png" alt=""/>Shkenca sociale & Psikologji</a></li><br/><br/>
+			<li><a href="sigurime.html"><img src="fotot/bullet.png" alt=""/>Sigurime</a></li><br/><br/>
+			<li><a href="shkenca-politike.html"><img src="fotot/bullet.png" alt=""/>Shkenca politike</a></li><br/><br/>
+			<li><a href="perralla.html"><img src="fotot/bullet.png" alt=""/>Përralla</a></li><br/><br/>
+			<li><a href="letersi.html"><img src="fotot/bullet.png" alt=""/>Letërsi shqiptare</a></li><br/><br/>
+			<li><a href="filozofi.html"><img src="fotot/bullet.png" alt=""/>Filozofi & Sociologji</a></li><br/><br/>
+			<li><a href="histori.html"><img src="fotot/bullet.png" alt=""/>Histori</a></li><br/><br/>
+			<li><a href="ekonomi.html"><img src="fotot/bullet.png" alt=""/>Ekonomi & Biznes</a></li><br/><br/>
+			<li><a href="intervista.html"><img src="fotot/bullet.png" alt=""/>Intervista</a></li><br/><br/>
+			<li><a href="roman.html"><img src="fotot/bullet.png" alt=""/>Roman</a></li><br/><br/>
+			<li><a href="femije.html"><img src="fotot/bullet.png" alt=""/>Libra për fëmijë</a></li><br/><br/>
+			<li><a href="poezi.html"><img src="fotot/bullet.png" alt=""/>Poezi</a></li><br/><br/>
+			<li><a href="novela"><img src="fotot/bullet.png" alt=""/>Tregime & Novela</a></li><br/><br/>
 		</ul>
 			<hr/>
 			<br/>
@@ -155,44 +162,62 @@
 <br/>
 <br/>
 
+<footer>
+	<div class="footer">
+		<div class="inner-footer" style="padding-top:50px;">
+			<h3>KONTAKTI</h3>
+		</br>
+			<p>Per kontakt me te shpejte me ne klikoni me poshte</p>
+			<p>Tel:<a href="#" style="color:#f76c6c;text-decoration: none;">+38344111111</a><br/>
+			Fax:<a href="#" style="color:#f76c6c;text-decoration: none;">(07) 30367095</a><br/></br>
+			Email:blejlibra@hotmail.com</p></br>
+			<p>Klikoni më poshtë për lokacion .</p>
 
-        <footer>
-			<div class="footer">
-		<div class="inner-footer">
-			<h3>CONTACT DETAILS</h3>
-			<p>Conavllisituso vestas mus pellentum aenean sapibulum in aliqun volut pat integest nulla.</p>
-			<p>Tel:<a href="#" style="color:#f76c6c;text-decoration: none;">xxx xxxxxx</a></br>
-			Fax:<a href="#" style="color:#f76c6c;text-decoration: none;">xxx xxxxxx</a></br>
-			Email:contact@bllablla.com</p>	
+			<button onclick="getLocation()" type="button" name="butoni" id="footer-button" >Lokacioni</button>
+						<p id="demo"></p>
+			<script>
+			var x = document.getElementById("demo");
+			function getLocation() {
+			if (navigator.geolocation) {
+				navigator.geolocation.getCurrentPosition(showPosition);
+			} else { 
+				x.innerHTML = "Geolocation is not supported by this browser.";
+			}
+			}
+			function showPosition(position) {
+			x.innerHTML = "Latituda: " + position.coords.latitude + "<br>Longituda: " + position.coords.longitude;
+			}
+			</script>
+			</div>
+		<div class="inner-footer" style="padding-top:50px;">
+			<h3>QASJE E SHPEJTE</h3>
+		</br>
+			<div class="footer-links"><a href="https://www.biblioteka-ks.org/">Biblioteka Kombetare</a><br/></div>
+			<div class="footer-links"><a href="https://www.uni-pr.edu/">Universiteti  i Prishtines</a><br/></div>
+			<div class="footer-links"><a href="http://www.biblioteka-pr.org/sq/Home">Biblioteka Hivzi Sulejmani</a><br/></div>
+			<div class="footer-links"><a href="http://dukagjinigroup.com/project/libraria-dukagjini/">Libraria Dukagjini</a><br/></div>
 		</div>
-		<div class="inner-footer">
-			<h3>QUICK LINKS</h3>
-			<div class="footer-links"><a href="#">Link text here</a></br></div>
-			<div class="footer-links"><a href="#">Link text here</a></br></div>
-			<div class="footer-links"><a href="#">Link text here</a></br></div>
-			<div class="footer-links"><a href="#">Link text here</a></br></div>
-		</div>
-		<div class="inner-footer">
-			<h3>FROM THE BLOG</h3>
-			<p><b>Blog Post Title</b></p>
+		<div class="inner-footer" style="padding-top:50px;">
+			<h3>NGA NE PER JU :)</h3>
+		</br>
 			<p>
-				Posted by Admin sdhfgdjhf vestibuum egestibulum eu justo convallis ague estas aenean elit intesque sed fecilispede estibulum.
+				Kjo faqe ofron shume mundesi per adhuruesit e librit,ku pervec blerjes dhe leximit online ju mund te ndani eksperiencen tuaj edhe me te tjeret.Kenaqesia juaj ne lexim ,kenaqesia jone ne pune !
 			</p>
-			<p style="text-align:right;"><a href="#" style="text-decoration: none;color:#f76c6c">Read More>></a></p>
+		</br>
+			<p style="text-align:right;"><a href="#" style="text-decoration: none;color:#f76c6c">Read More</a></p>
 		</div>
-		<div class="inner-footer">
-			<h3>GRAB OUR NEWSLETTER</h3>
+		<div class="inner-footer" style="padding-top:50px;">
+			<h3>SYGJERIME DHE VEREJTJE</h3>
+		</br>
 				<input type="text" name="Emri" placeholder="Name" id="footer-form" style="border:1px solid #f76c6c">
 				<input type="text" name="Email" placeholder="Email" id="footer-form" style="border:1px solid #f76c6c">
-				<button type="button" name="butoni" id="footer-button">SUBMIT</button>
+				<button type="button" name="butoni" id="footer-button"><a href="mailto:costumer-service@bookey.com" style="color: inherit">SUBMIT</a></button>
 		</div>
 		</div>
-<div class="copyrights">
+		<div class="copyrights" style="margin-bottom:-10px">
 			<h3>Copyrights &copy 2019 All Rights Reserved</h3>
 		</div>
-	</div>
-
-        </footer>
+</footer>
 <script src="../Projekti per Internet/all.min.js"></script>
 </body>
 </html>
