@@ -31,10 +31,16 @@
     <body>
         <header id="head" style="position: fixed">
             <ul class="navbar">
-              <li><a href="index.html">BALLINA</a></li>
-		<li><a href="ngjarjet.html">NGJARJET</a></li>
-		<li><a href="Rekomandimet.html">REKOMANDIMET</a></li>
-		<li><a href="te-tjera.html">TE TJERA</a></li>
+                <li><a href="Projekti.html">ballina</a></li>
+                <li><a href="ngjarjet.html">ngjarjet</a></li>
+                <li><a href="Rekomandimet.html">rekomandimet</a></li>
+                <li><div class="dropdown">
+					<div class="dropbtn"><a href="#">të tjera</a></div>
+					<div class="dropdown-content" style="background-color:#3b3a4a;opacity: 0.9">
+					  <a href="drag and drop.html" style="color: white">Autorët e preferuar</a>
+					  <a href="stafi.html" style="color:  white">Stafi</a>
+					</div>
+				  </div></li>
 				
 				<button class="shop-cart" id="shop" onclick="teksti()"><span style="color: antiquewhite;vertical-align: middle;"><i class="fas fa-shopping-cart center"></i></span></button>
 				<button class="shop-cart" id="account" style="right:370px;"><span style="color: antiquewhite;"><i class="fas fa-user-alt"></i></span></button>
@@ -49,7 +55,8 @@
 		
 	<div class="content">
 		<div class="shop-view" id="shop-view"><div id="result"></div>
-							   <button type="button" id="buy" onclick="resetCount(),window.location.href='C:/Users/HP/Desktop/Projekti per Internet/Blej.html'">Blej</button></div>
+							   <button type="button" id="buy"
+							    onclick="resetCount(),window.location.href='C:/Users/HP/Desktop/Projekti per Internet/Blej.html'"><a href="Blej.html">Blej</a></button></div>
 		<div class="account-view" id="account-view">
 			<ul>
 				<li><i class="fas fa-user-alt"></i>Account</li>
@@ -70,9 +77,11 @@
 				<p><h3 style="color:#161626">Mira Meksi</h3></p>
 			<br/>
 			<br/>
-			<p>Paul Despiere-i gjeti një letër të tij të shkurtër e pa komente, ku jepej kallëzimi i një murgu të arratisur nga Janina: “Zonjën Frosinë e mbyllën në një sëndyk venecian të larë në argjend dhe pak përpara se të zbardhte e hodhën në ujërat pis të liqenit. Pas saj, diku më larg, shprazën në liqn gjithë mllefin e Ali Pashait, vezirit të Janinës, duke mbytur, lidhur këmbë e duar edhe gjashtëmbëdhjetë gra të tjera që lebetiteshin duke thirur zot e qiell. Ndërsa ajo hyri pa zë në varrin e larë në aegjend, duke duruar përunjazi kurorën e turpit mbi kokë: i shëmbëllente një hijeje, fytyra i qe tretur dhe zbarthëritur si shkumës, flokët i qenë bërë të tejdukshëm, duart i mbante të lidhura në një lutje të përjetëshme vetëm buzët e përvëluara dukeshin si të paskëshin mbledhur gjithë dashurinë e botës. Sytë i kishin marrë një dritë të veçantë shprese, e cila nuk i përkiste ditës së kësaj bote...”
-
-				 
+			<p>Paul Despiere-i gjeti një letër të tij të shkurtër e pa komente, ku jepej kallëzimi i një murgu të arratisur nga Janina:
+				 “Zonjën Frosinë e mbyllën në një sëndyk venecian të larë në argjend dhe pak përpara se të zbardhte e hodhën në ujërat pis të liqenit.
+				  Pas saj, diku më larg, shprazën në liqn gjithë mllefin e Ali Pashait, vezirit të Janinës, duke mbytur, lidhur këmbë e duar edhe gjashtëmbëdhjetë 
+				  gra të tjera që lebetiteshin duke thirur zot e qiell. Ndërsa ajo hyri pa zë në varrin e larë në aegjend...
+ 
 			</p>
 			<br/>
 			<br/>
@@ -81,7 +90,7 @@
             <span class="fa fa-star checked"></span>
             <span class="fa fa-star checked"></span>
             <span class="fa fa-star checked"></span>
-        
+			<span class="fa fa-star"></span>
 
             <div id="butonat" style="width:70%">
                 <div class="but"><button id="blej" onclick="clickCounter()"><span>Shto në shportë</span></button></div>
@@ -102,28 +111,30 @@
 			<br/>
 			<h3 style="text-align: center">Kategoritë</h3><br/><br/>
 			<ul>
-<li><a href="Biografi.html.html">~Biografi</a></li><br/><br/>
-			<li><a href="shkenca.html">~Shkenca sociale & Psikologji</a></li><br/><br/>
-			<li><a href="Fantazi.html">~Fantazi</a></li><br/><br/>,.
-			<li><a href="letersi.html">~Letërsi shqiptare</a></li><br/><br/>
-			<li><a href="filozofi.html">~Filozofi & Sociologji</a></li><br/><br/>
-			<li><a href="histori.html">~Histori</a></li><br/><br/>
-			<li><a href="ekonomi.html">~Ekonomi & Biznes</a></li><br/><br/>
-			<li><a href="femije.html">~Libra për fëmijë</a></li><br/><br/>
-			<li><a href="religjioz.html">~Religjioz</a></li><br/><br/>
-		
+				<li><a href="Biografi.html"><img src="fotot/bullet.png" alt=""/>Biografi</a></li><br/><br/>
+                <li><a href="shkenca.html"><img src="fotot/bullet.png" alt=""/>Shkenca sociale & Psikologji</a></li><br/><br/>
+                <li><a href="Fantazi.html"><img src="fotot/bullet.png" alt=""/>Fantazi</a></li><br/><br/>
+                <li><a href="letersi.html"><img src="fotot/bullet.png" alt=""/>Letërsi shqiptare</a></li><br/><br/>
+                <li><a href="Filozofi.html"><img src="fotot/bullet.png" alt=""/>Filozofi & Sociologji</a></li><br/><br/>
+                <li><a href="histori.html"><img src="fotot/bullet.png" alt=""/>Histori</a></li><br/><br/>
+                <li><a href="ekonomi.html"><img src="fotot/bullet.png" alt=""/>Ekonomi & Biznes</a></li><br/><br/>
+                <li><a href="femije.html"><img src="fotot/bullet.png" alt=""/>Libra për fëmijë</a></li><br/><br/>
+                <li><a href="religjioz.html"><img src="fotot/bullet.png" alt=""/>Religjioz</a></li><br/><br/>
 		</ul>
 			<hr/>
 			<br/>
 		<h3 style="text-align: center">Related books</h3>
 			<br/>
 			<br/>
-        <a href="gjenerali-i-ushtrise-se-vdekur.html"><img src="fotot\Gjenerali i ushtrise se vdekur.jpg" alt="foto" class="center"></a>
+        <a href="gjenerali.html"><img src="fotot\Gjenerali i ushtrise se vdekur.jpg" alt="foto" class="center"></a>
 		<p><h2 style="text-align: center">Gjenerali i ushtrise se vdekur</h2></p>
 			<p><h5 style="text-align: center">by Ismail Kadare</h5></p>
         <br/>
         <br/>
-      
+		<br/>
+		<br/>
+		<br/>
+        <br/>
     
 		</div>
 		<table cellspacing="0" cellpadding="5">
@@ -211,7 +222,7 @@
 				</br>
 						<input type="text" name="Emri" placeholder="Name" id="footer-form" style="border:1px solid #f76c6c">
 						<input type="text" name="Email" placeholder="Email" id="footer-form" style="border:1px solid #f76c6c">
-						<button type="button" name="butoni" id="footer-button">SUBMIT</button>
+						<button type="button" name="butoni" id="footer-button"><a href="mailto:costumer-service@bookey.com" style="color: inherit">SUBMIT</a></button>
 				</div>
 				</div>
 				<div class="copyrights" style="margin-bottom:-10px">
