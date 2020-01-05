@@ -46,7 +46,7 @@
       <li><a href="Projekti.html">ballina</a></li>
       <li><a href="ngjarjet.html">ngjarjet</a></li>
       <li><a href="Rekomandimet.html">rekomandimet</a></li>
-      
+      <li><div class="dropdown">
     <div class="dropbtn"><a href="#">kategorite</a></div>
     <div class="dropdown-content" style="background-color:#3b3a4a;opacity: 0.9;color: black">
       <a href="Biografi.html" style="color: white">Biografi</a>
@@ -58,13 +58,14 @@
       <a href="libra-per-femije.html" style="color:  white">Libra për fëmijë</a>
       <a href="religjioz.html" style="color:  white">Libra religjioz</a>
       <a href="Fantazi.html" style="color:  white">Fantazi</a>
+    </div></li>
     <li><div class="dropdown">
-              <div class="dropbtn"><a href="#">të tjera</a></div>
-					<div class="dropdown-content" style="background-color:#3b3a4a;opacity: 0.9">
-					  <a href="drag and drop.html" style="color: white">Autorët e preferuar</a>
-					  <a href="stafi.html" style="color:  white">Stafi</a>
-					</div>
-				  </div></li>
+    <div class="dropbtn"><a href="#">TE TJERA</a></div>
+    <div class="dropdown-content" style="background-color:#3b3a4a;opacity: 0.9">
+      <a href="drag and drop.html" style="color: white">Auorëte preferuar</a>
+      <a href="stafi.html" style="color:  white">Stafi</a>
+    </div>
+    </div></li>
     <div style="float:right;margin-top:12px;margin-right:20px">
     <input type="text" name="textfield" id="textfield" placeholder="Search our website...">
     <button type="button" id="header-button">Search</button>
@@ -74,7 +75,7 @@
     <div  style="background-color:lightgray;margin-top:-20px;">
 
         <h1 style="margin: 20px;font-size: 48px;color:black;">STAFI</h1>
-       <canvas id="canvas" width="900" height="700"  style="border:1px solid black;background-color: blanchedalmond;"></canvas>
+       <canvas id="canvas" width="800" height="700"  style="border:1px solid black;background-color: blanchedalmond;"></canvas>
        <script>
         var canvas = document.getElementById('canvas');
         var ctx= canvas.getContext('2d');
@@ -123,29 +124,29 @@ draw(ctx,image);
 
         
 </script>
-<div style="width:30%;display:block;float:right;">
-<h2 style="float:right;margin-top:250px;margin-right:60px;color:lightcoral">Keto jane disa nga fotografite e stafit te webfaqes.<br/> Stafi eshte i perbere nga 4 vajza . <br/>Studente ne Universitetin e Prishtines me saktesisht  <br/>"Fakulteti i Inxhinierise Kompjuterike".
+<div style="width:30%;display:block;float:right;"><svg height="130" width="500">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"
+      style="stop-color:pink;stop-opacity:1" />
+      <stop offset="100%"
+      style="stop-color:purple;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <ellipse cx="180" cy="70" rx="170" ry="55" fill="url(#grad1)" />
+  <text fill="#ffffff" font-size="45" font-family="Verdana"
+  x="50" y="86">BiblioTech</text>
+Sorry, your browser does not support inline SVG.
+</svg>
+<h2 style="float:right;margin-top:150px;margin-right:60px;color:lightcoral">Keto jane disa nga fotografite e stafit te webfaqes.<br/> Stafi eshte i perbere nga 4 vajza . <br/>Studente ne Universitetin e Prishtines me saktesisht  <br/>"Fakulteti i Inxhinierise Kompjuterike".
 <br/>Emrat me llogarite e tyre ne  facebook mund t'i gjeni <br/> me poshte:
 <li class="qikat"><a href="https://www.facebook.com/mihrije16">Mihrije Kadriu</a></li>
 <li class="qikat"><a href="https://www.facebook.com/margarita.nasufi">Margarita Nasufi</a></li>
 <li class="qikat"><a href="https://www.facebook.com/profile.php?id=100011666623175">Margarita Dibrani</a></li>
 <li class="qikat"><a href="https://www.facebook.com/lyra.pireva">Lyra Pireva</a></li>
- <p id="demo"></p>
 </h2>
 </div>
-    <script>
-try {
-  KjoNukEgziston("Emer");
-}
-catch(err) {
-  document.getElementById("demo").innerHTML = err.message;
-}
-finally
-    {
-        document.getElementById("demo").innerHTML="Tani funksion!";
-    }
-        
-</script>
+
 
 <div class="footer">
     <div class="inner-footer">
