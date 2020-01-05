@@ -31,10 +31,16 @@
     <body>
         <header id="head" style="position: fixed">
             <ul class="navbar">
-             <li><a href="index.html">BALLINA</a></li>
-		<li><a href="ngjarjet.html">NGJARJET</a></li>
-		<li><a href="Rekomandimet.html">REKOMANDIMET</a></li>
-		<li><a href="te-tjera.html">TE TJERA</a></li>
+                <li><a href="Projekti.html">ballina</a></li>
+                <li><a href="ngjarjet.html">ngjarjet</a></li>
+                <li><a href="Rekomandimet.html">rekomandimet</a></li>
+                <li><div class="dropdown">
+					<div class="dropbtn"><a href="#">të tjera</a></div>
+					<div class="dropdown-content" style="background-color:#3b3a4a;opacity: 0.9">
+					  <a href="drag and drop.html" style="color: white">Autorët e preferuar</a>
+					  <a href="stafi.html" style="color:  white">Stafi</a>
+					</div>
+				  </div></li>
 				
 				<button class="shop-cart" id="shop" onclick="teksti()"><span style="color: antiquewhite;vertical-align: middle;"><i class="fas fa-shopping-cart center"></i></span></button>
 				<button class="shop-cart" id="account" style="right:370px;"><span style="color: antiquewhite;"><i class="fas fa-user-alt"></i></span></button>
@@ -49,7 +55,8 @@
 		
 	<div class="content">
 		<div class="shop-view" id="shop-view"><div id="result"></div>
-							   <button type="button" id="buy" onclick="resetCount(),window.location.href='C:/Users/HP/Desktop/Projekti per Internet/Blej.html'">Blej</button></div>
+							   <button type="button" id="buy"
+							    onclick="resetCount(),window.location.href='C:/Users/HP/Desktop/Projekti per Internet/Blej.html'"><a href="Blej.html">Blej</a></button></div>
 		<div class="account-view" id="account-view">
 			<ul>
 				<li><i class="fas fa-user-alt"></i>Account</li>
@@ -70,8 +77,11 @@
 				<p><h3 style="color:#161626">William Shakespeare</h3></p>
 			<br/>
 			<br/>
-			<p>Mbreti Lir eshte mbreti i Anglise. Ai vendos te lere fronin e tij dhe t’a ndaje mes tre vajzave te tij, Gonerilit, Reganit dhe Kordelias. Ai i vendos ato para nje prove ku do te shihte se cila nga vajzat do t’a donte me shume. Dy vajzat e medha  nisin ta manipulojne me fjale, ndersa Kordelja, vajza e vogel thote se ajo e do babain e saj ashtu sic do femije. Prandaj ai nuk i jep asaj nga tokat e veta, por e mallkon  dhe  e debon ate nga shtepia. Nderkohe  Kordelja shkon ne France pasi mbreti i Frances ishte ne dashuri me te. Me pas Liri e kupton se c’gabim te rende kishte bere pasi dy vajzat e debojne nga shtepia dhe e lene ne shi.
-                Nderkohe  Konti I Glosterit  ka gjithashtu probleme familjare. Djali i tij i madh, Edmundi, eshte i adoptuar. Ai nuk e pranon dot kete dhe thur nje intrige sikur djali tjeter, Edgari do te vrase babane e tyre. Ndaj Glosteri e debon Edgarin dhe mban prane vetes Edmundin. Kur Glosteri merr vesh qe Lirin e kane braktisur te bijat, ai e ndihmon ate. Regan dhe I shoqi I saj e masakrojne per kete, dhe ai perfundon serisht tek Edgari, ku shkoi dhe Liri.
+			<p>Mbreti Lir eshte mbreti i Anglise. Ai vendos te lere fronin e tij dhe t’a ndaje mes tre vajzave te tij, Gonerilit, Reganit dhe Kordelias.
+				 Ai i vendos ato para nje prove ku do te shihte se cila nga vajzat do t’a donte me shume. Dy vajzat e medha  nisin ta manipulojne me fjale,
+				  ndersa Kordelja, vajza e vogel thote se ajo e do babain e saj ashtu sic do femije. Prandaj ai nuk i jep asaj nga tokat e veta, por e mallkon
+					dhe  e debon ate nga shtepia. Nderkohe  Kordelja shkon ne France pasi mbreti i Frances ishte ne dashuri me te. Me pas Liri e kupton se c’gabim
+					 te rende kishte bere pasi dy vajzat e debojne nga shtepia dhe e lene ne shi...
 			</p>
 			<br/>
 			<br/>
@@ -101,16 +111,15 @@
 			<br/>
 			<h3 style="text-align: center">Kategoritë</h3><br/><br/>
 			<ul>
-			<li><a href="Biografi.html.html">~Biografi</a></li><br/><br/>
-			<li><a href="shkenca.html">~Shkenca sociale & Psikologji</a></li><br/><br/>
-			<li><a href="Fantazi.html">~Fantazi</a></li><br/><br/>,.
-			<li><a href="letersi.html">~Letërsi shqiptare</a></li><br/><br/>
-			<li><a href="filozofi.html">~Filozofi & Sociologji</a></li><br/><br/>
-			<li><a href="histori.html">~Histori</a></li><br/><br/>
-			<li><a href="ekonomi.html">~Ekonomi & Biznes</a></li><br/><br/>
-			<li><a href="femije.html">~Libra për fëmijë</a></li><br/><br/>
-			<li><a href="religjioz.html">~Religjioz</a></li><br/><br/>
-		
+				<li><a href="Biografi.html"><img src="fotot/bullet.png" alt=""/>Biografi</a></li><br/><br/>
+                <li><a href="shkenca.html"><img src="fotot/bullet.png" alt=""/>Shkenca sociale & Psikologji</a></li><br/><br/>
+                <li><a href="Fantazi.html"><img src="fotot/bullet.png" alt=""/>Fantazi</a></li><br/><br/>
+                <li><a href="letersi.html"><img src="fotot/bullet.png" alt=""/>Letërsi shqiptare</a></li><br/><br/>
+                <li><a href="Filozofi.html"><img src="fotot/bullet.png" alt=""/>Filozofi & Sociologji</a></li><br/><br/>
+                <li><a href="histori.html"><img src="fotot/bullet.png" alt=""/>Histori</a></li><br/><br/>
+                <li><a href="ekonomi.html"><img src="fotot/bullet.png" alt=""/>Ekonomi & Biznes</a></li><br/><br/>
+                <li><a href="femije.html"><img src="fotot/bullet.png" alt=""/>Libra për fëmijë</a></li><br/><br/>
+                <li><a href="religjioz.html"><img src="fotot/bullet.png" alt=""/>Religjioz</a></li><br/><br/>
 		</ul>
 			<hr/>
 			<br/>
@@ -122,7 +131,10 @@
 			<p><h5 style="text-align: center">by William Shakespeare</h5></p>
         <br/>
         <br/>
-      
+		<br/>
+		<br/>
+		<br/>
+        <br/>
     
 		</div>
 		<table cellspacing="0" cellpadding="5">
@@ -210,7 +222,8 @@
 				</br>
 						<input type="text" name="Emri" placeholder="Name" id="footer-form" style="border:1px solid #f76c6c">
 						<input type="text" name="Email" placeholder="Email" id="footer-form" style="border:1px solid #f76c6c">
-						<button type="button" name="butoni" id="footer-button">SUBMIT</button>
+						<button type="button" name="butoni" id="footer-button"><a href="mailto:costumer-service@bookey.com" style="color: inherit">SUBMIT</a>
+						</button>
 				</div>
 				</div>
 				<div class="copyrights" style="margin-bottom:-10px">
