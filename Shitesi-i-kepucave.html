@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-		<title>Libri</title>
+		<title>Shitësi i Këpucave</title>
 		<meta charset="utf-8"/>
         <link href="css\stilizimi.css" rel="stylesheet"/>
 		<link href="css\stilizimiLibri.css" rel="stylesheet"/>
@@ -32,10 +32,16 @@
     <body>
         <header id="head" style="position: fixed">
             <ul class="navbar">
-               <li><a href="indexi.html">BALLINA</a></li>
-                <li><a href="ngjarjet.html">NGJARJET</a></li>
-                <li><a href="Rekomandimet.html">REKOMANDIMET</a></li>
-                <li><a href="te-tjera.html">TE TJERA</a></li>
+				<li><a href="Projekti.html">ballina</a></li>
+                <li><a href="ngjarjet.html">ngjarjet</a></li>
+                <li><a href="Rekomandimet.html">rekomandimet</a></li>
+                <li><div class="dropdown">
+					<div class="dropbtn"><a href="#">të tjera</a></div>
+					<div class="dropdown-content" style="background-color:#3b3a4a;opacity: 0.9">
+					  <a href="drag and drop.html" style="color: white">Autorët e preferuar</a>
+					  <a href="stafi.html" style="color:  white">Stafi</a>
+					</div>
+				  </div></li>
 
 				<button class="shop-cart" id="shop" onclick="teksti()"><span style="color: antiquewhite;vertical-align: middle;"><i class="fas fa-shopping-cart center"></i></span></button>
 				<button class="shop-cart" id="account" style="right:370px;"><span style="color: antiquewhite;"><i class="fas fa-user-alt"></i></span></button>
@@ -101,15 +107,15 @@
 			<br/>
 			<h3 style="text-align: center">Kategoritë</h3><br/><br/>
 			<ul>
-				<li><a href="Biografi.html">~Biografi</a></li><br/><br/>
-                <li><a href="shkenca.html">~Shkenca sociale & Psikologji</a></li><br/><br/>
-                <li><a href="Fantazi.html">~Fantazi</a></li><br/><br/>
-                <li><a href="letersi.html">~Letërsi shqiptare</a></li><br/><br/>
-                <li><a href="filozofi.html">~Filozofi & Sociologji</a></li><br/><br/>
-                <li><a href="histori.html">~Histori</a></li><br/><br/>
-                <li><a href="ekonomi.html">~Ekonomi & Biznes</a></li><br/><br/>
-                <li><a href="femije.html">~Libra për fëmijë</a></li><br/><br/>
-                <li><a href="religjioz.html">~Religjioz</a></li><br/><br/>
+				<li><a href="Biografi.html"><img src="fotot/bullet.png" alt=""/>Biografi</a></li><br/><br/>
+				<li><a href="shkenca.html"><img src="fotot/bullet.png" alt=""/>Shkenca sociale & Psikologji</a></li><br/><br/>
+				<li><a href="Fantazi.html"><img src="fotot/bullet.png" alt=""/>Fantazi</a></li><br/><br/>
+				<li><a href="letersi.html"><img src="fotot/bullet.png" alt=""/>Letërsi shqiptare</a></li><br/><br/>
+				<li><a href="Filozofi.html"><img src="fotot/bullet.png" alt=""/>Filozofi & Sociologji</a></li><br/><br/>
+				<li><a href="histori.html"><img src="fotot/bullet.png" alt=""/>Histori</a></li><br/><br/>
+				<li><a href="ekonomi.html"><img src="fotot/bullet.png" alt=""/>Ekonomi & Biznes</a></li><br/><br/>
+				<li><a href="femije.html"><img src="fotot/bullet.png" alt=""/>Libra për fëmijë</a></li><br/><br/>
+				<li><a href="religjioz.html"><img src="fotot/bullet.png" alt=""/>Religjioz</a></li><br/><br/>
 		</ul>
 			<hr/>
 			<br/>
@@ -120,7 +126,10 @@
 		<p><h2 style="text-align: center">Të jashtëzakonshmit</h2></p>
 			<p><h5 style="text-align: center">nga Malcolm Gladwell</h5></p>
         <br/>
-        <br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
 		</div>
 		<table cellspacing="0" cellpadding="5">
 			<tr>
@@ -155,59 +164,64 @@
 <br/>
 <br/>
 <br/>
+<footer>
 <div class="footer">
-		<div class="inner-footer">
-			<h3>KONTAKTI</h3>
-			<p>Për kontakt më të shpejtë me ne klikoni më poshtë</p>
-			<p>Tel:<a href="#" style="color:#f76c6c;text-decoration: none;">+38344111111</a><br/>
-			Fax:<a href="#" style="color:#f76c6c;text-decoration: none;">(07) 30367095</a><br/>
-			Email:blejlibra@hotmail.com</p>
-            <p>Klikoni më poshtë për lokacion .</p>
+	<div class="inner-footer" style="padding-top:50px;">
+		<h3>KONTAKTI</h3>
+	</br>
+		<p>Per kontakt me te shpejte me ne klikoni me poshte</p>
+		<p>Tel:<a href="#" style="color:#f76c6c;text-decoration: none;">+38344111111</a><br/>
+		Fax:<a href="#" style="color:#f76c6c;text-decoration: none;">(07) 30367095</a><br/></br>
+		Email:blejlibra@hotmail.com</p></br>
+		<p>Klikoni më poshtë për lokacion .</p>
 
-<button onclick="getLocation()" type="button" name="butoni" id="footer-button" >Lokacioni</button>
-            <p id="demo"></p>
-<script>
-var x = document.getElementById("demo");
+		<button onclick="getLocation()" type="button" name="butoni" id="footer-button" >Lokacioni</button>
+					<p id="demo"></p>
+		<script>
+		var x = document.getElementById("demo");
 
-function getLocation() {
-  if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(showPosition);
-  } else { 
-    x.innerHTML = "Geolocation is not supported by this browser.";
-  }
-}
+		function getLocation() {
+		if (navigator.geolocation) {
+			navigator.geolocation.getCurrentPosition(showPosition);
+		} else { 
+			x.innerHTML = "Geolocation is not supported by this browser.";
+		}
+		}
 
-function showPosition(position) {
-  x.innerHTML = "Latituda: " + position.coords.latitude + "<br>Longituda: " + position.coords.longitude;
-}
-</script>
-
+		function showPosition(position) {
+		x.innerHTML = "Latituda: " + position.coords.latitude + "<br>Longituda: " + position.coords.longitude;
+		}
+		</script>
 		</div>
-		<div class="inner-footer">
-			<h3>QASJE E SHPEJT&#203</h3>
-			<div class="footer-links"><a href="https://www.biblioteka-ks.org/">Biblioteka Kombe&#235tare</a><br/></div>
-			<div class="footer-links"><a href="https://www.uni-pr.edu/">Universiteti  i Prishtin&#235s</a><br/></div>
-			<div class="footer-links"><a href="http://www.biblioteka-pr.org/sq/Home">Biblioteka Hivzi Sulejmani</a><br/></div>
-			<div class="footer-links"><a href="http://dukagjinigroup.com/project/libraria-dukagjini/">Libraria Dukagjini</a><br/></div>
-		</div>
-		<div class="inner-footer">
-			<h3>NGA NE P&#203R JU  :) </h3>
-			
-			<p>
-				Kjo faqe ofron shum&#235 mund&#235si p&#235r adhuruesit e librit,ku p&#235rve&#231 blerjes dhe leximit online ju mund t&#235 ndani eksperiencen tuaj edhe me t&#235 tjer&#235t. K&#235naqesia juaj n&#235 lexim ,k&#235naqesia jon&#235 n&#235 pun&#235 !
-			</p>
-			<p style="text-align:right;"><a href="#" style="text-decoration: none;color:#f76c6c">Read More</a></p>
-		</div>
-		<div class="inner-footer">
-			<h3>SYGJERIME DHE V&#203REJTJE</h3>
-				<input type="text" name="Emri" placeholder="Name" id="footer-form" style="border:1px solid #f76c6c">
-				<input type="text" name="Email" placeholder="Email" id="footer-form" style="border:1px solid #f76c6c">
-				<button type="button" name="butoni" id="footer-button">"><a href="mailto:costumer-service@bookey.com" style="color: inherit">SUBMIT</a></button>
-		</div>
-		</div>
-		<div class="copyrights" style="margin-bottom:-10px">
-			<h3>Copyrights &copy 2020 All Rights Reserved</h3>
-		</div>
+	<div class="inner-footer" style="padding-top:50px;">
+		<h3>QASJE E SHPEJTE</h3>
+	</br>
+		<div class="footer-links"><a href="https://www.biblioteka-ks.org/">Biblioteka Kombetare</a><br/></div>
+		<div class="footer-links"><a href="https://www.uni-pr.edu/">Universiteti  i Prishtines</a><br/></div>
+		<div class="footer-links"><a href="http://www.biblioteka-pr.org/sq/Home">Biblioteka Hivzi Sulejmani</a><br/></div>
+		<div class="footer-links"><a href="http://dukagjinigroup.com/project/libraria-dukagjini/">Libraria Dukagjini</a><br/></div>
+	</div>
+	<div class="inner-footer" style="padding-top:50px;">
+		<h3>NGA NE PER JU :)</h3>
+	</br>
+		<p>
+			Kjo faqe ofron shume mundesi per adhuruesit e librit,ku pervec blerjes dhe leximit online ju mund te ndani eksperiencen tuaj edhe me te tjeret.Kenaqesia juaj ne lexim ,kenaqesia jone ne pune !
+		</p>
+	</br>
+		<p style="text-align:right;"><a href="#" style="text-decoration: none;color:#f76c6c">Read More</a></p>
+	</div>
+	<div class="inner-footer" style="padding-top:50px;">
+		<h3>SYGJERIME DHE VEREJTJE</h3>
+	</br>
+			<input type="text" name="Emri" placeholder="Name" id="footer-form" style="border:1px solid #f76c6c">
+			<input type="text" name="Email" placeholder="Email" id="footer-form" style="border:1px solid #f76c6c">
+			<button type="button" name="butoni" id="footer-button"><a href="mailto:costumer-service@bookey.com" style="color: inherit">SUBMIT</a></button>
+	</div>
+	</div>
+	<div class="copyrights" style="margin-bottom:-10px">
+		<h3>Copyrights &copy 2019 All Rights Reserved</h3>
+	</div>
+</footer>
 <script src="../Projekti per Internet/all.min.js">
 </script>
 </body>
