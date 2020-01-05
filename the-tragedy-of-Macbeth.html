@@ -31,10 +31,16 @@
     <body>
         <header id="head" style="position: fixed">
             <ul class="navbar">
-              <li><a href="index.html">BALLINA</a></li>
-		<li><a href="ngjarjet.html">NGJARJET</a></li>
-		<li><a href="Rekomandimet.html">REKOMANDIMET</a></li>
-		<li><a href="te-tjera.html">TE TJERA</a></li>
+                <li><a href="Projekti.html">ballina</a></li>
+                <li><a href="ngjarjet.html">ngjarjet</a></li>
+                <li><a href="Rekomandimet.html">rekomandimet</a></li>
+                <li><div class="dropdown">
+					<div class="dropbtn"><a href="#">të tjera</a></div>
+					<div class="dropdown-content" style="background-color:#3b3a4a;opacity: 0.9">
+					  <a href="drag and drop.html" style="color: white">Autorët e preferuar</a>
+					  <a href="stafi.html" style="color:  white">Stafi</a>
+					</div>
+				  </div></li>
 				
 				<button class="shop-cart" id="shop" onclick="teksti()"><span style="color: antiquewhite;vertical-align: middle;"><i class="fas fa-shopping-cart center"></i></span></button>
 				<button class="shop-cart" id="account" style="right:370px;"><span style="color: antiquewhite;"><i class="fas fa-user-alt"></i></span></button>
@@ -49,7 +55,7 @@
 		
 	<div class="content">
 		<div class="shop-view" id="shop-view"><div id="result"></div>
-							   <button type="button" id="buy" onclick="resetCount(),window.location.href='C:/Users/HP/Desktop/Projekti per Internet/Blej.html'">Blej</button></div>
+							   <button type="button" id="buy" onclick="resetCount(),window.location.href='C:/Users/HP/Desktop/Projekti per Internet/Blej.html'"><a href="Blej.html">Blej</a></button></div>
 		<div class="account-view" id="account-view">
 			<ul>
 				<li><i class="fas fa-user-alt"></i>Account</li>
@@ -70,7 +76,11 @@
 				<p><h3 style="color:#161626">William Shakespeare</h3></p>
 			<br/>
 			<br/>
-			<p>Makbethi eshët njëra ndër tragjeditë e Shekspirit ku paraqitet lufta e përgjakshme për pushtet ne Skoci gjatë shekullit XI. Makbethi është një gjeneral ne ushtrinë e mbretit, dhe një dite krejt papritur ai ndeshtë me një magjistare. Magjistarja parashikon fatin e tij dhe i tregon se një dite ai do te behej mbret por se nuk e dinte se ku. Pas këtij parashikimi ai nuk resht se menduari se një dite do te behej mbret, këtë gjë ai ia tregon dhe te shoqes e cila tepër ambicioze dhe gjakftohte e bind Makbethin qe te vrase mbretin e Skocisë. Ne fillim te veprës kemi një gjakftohtësi nga te dyja palët por Makbethi kishte vrare disa ne fushën e betejës por ata kane qene armiq ai nuk ka vrare kure ne përfitim te tij por vetëm ne shërbim te mbretit. Zonja Makbeth pa u menduar e bind Makbethin se gjeja me e mire për tu bere ishte vrasja e mbretit dhe me pas ai do te merte fronin. Ajo shprehet ne mënyren me mizore duke thëne se n.q.s mbreti nuk do ti ngjante te atit ajo do ta vriste vete. Por gjate skenës se krimit autori ka dhëne një skene renqethese dhe tregon dobësinë e Makbethit. Por edhe pas kryerjes te krimit Makbethi nuk arrin te jete i lumtur sepse këtë gjë ja pengon ndërgjegjja e tij e cila nuk e le te qete nga ndjenja e fajit. Gjate veprës jepet edhe dobësimi i karakterit te zonjës Makbeth. Ajo gjithashtu torturohet nga vete ndërgjegjja e saj për krimin qe shtyu te shoqin te kryente i cili ne një çast dobësimi kish pranuar ta kyente.Dhe Magbethi vdes.
+			<p>Makbethi eshët njëra ndër tragjeditë e Shekspirit ku paraqitet lufta e përgjakshme për pushtet ne Skoci gjatë shekullit XI.
+				 Makbethi është një gjeneral ne ushtrinë e mbretit, dhe një dite krejt papritur ai ndeshtë me një magjistare. Magjistarja parashikon
+				  fatin e tij dhe i tregon se një dite ai do te behej mbret por se nuk e dinte se ku. Pas këtij parashikimi ai nuk resht se menduari se
+				   një dite do te behej mbret, këtë gjë ai ia tregon dhe te shoqes e cila tepër ambicioze dhe gjakftohte e bind Makbethin qe te vrase mbretin
+					e Skocisë...
 
 
 				 
@@ -104,16 +114,15 @@
 			<br/>
 			<h3 style="text-align: center">Kategoritë</h3><br/><br/>
 			<ul>
-			<li><a href="Biografi.html.html">~Biografi</a></li><br/><br/>
-			<li><a href="shkenca.html">~Shkenca sociale & Psikologji</a></li><br/><br/>
-			<li><a href="Fantazi.html">~Fantazi</a></li><br/><br/>,.
-			<li><a href="letersi.html">~Letërsi shqiptare</a></li><br/><br/>
-			<li><a href="filozofi.html">~Filozofi & Sociologji</a></li><br/><br/>
-			<li><a href="histori.html">~Histori</a></li><br/><br/>
-			<li><a href="ekonomi.html">~Ekonomi & Biznes</a></li><br/><br/>
-			<li><a href="femije.html">~Libra për fëmijë</a></li><br/><br/>
-			<li><a href="religjioz.html">~Religjioz</a></li><br/><br/>
-		
+				<li><a href="Biografi.html"><img src="fotot/bullet.png" alt=""/>Biografi</a></li><br/><br/>
+                <li><a href="shkenca.html"><img src="fotot/bullet.png" alt=""/>Shkenca sociale & Psikologji</a></li><br/><br/>
+                <li><a href="Fantazi.html"><img src="fotot/bullet.png" alt=""/>Fantazi</a></li><br/><br/>
+                <li><a href="letersi.html"><img src="fotot/bullet.png" alt=""/>Letërsi shqiptare</a></li><br/><br/>
+                <li><a href="Filozofi.html"><img src="fotot/bullet.png" alt=""/>Filozofi & Sociologji</a></li><br/><br/>
+                <li><a href="histori.html"><img src="fotot/bullet.png" alt=""/>Histori</a></li><br/><br/>
+                <li><a href="ekonomi.html"><img src="fotot/bullet.png" alt=""/>Ekonomi & Biznes</a></li><br/><br/>
+                <li><a href="femije.html"><img src="fotot/bullet.png" alt=""/>Libra për fëmijë</a></li><br/><br/>
+                <li><a href="religjioz.html"><img src="fotot/bullet.png" alt=""/>Religjioz</a></li><br/><br/>
 		</ul>
 			<hr/>
 			<br/>
@@ -125,7 +134,10 @@
 			<p><h5 style="text-align: center">by William Shakespeare</h5></p>
         <br/>
         <br/>
-      
+		<br/>
+		<br/>
+		<br/>
+        <br/>
     
 		</div>
 		<table cellspacing="0" cellpadding="5">
@@ -213,7 +225,7 @@
 				</br>
 						<input type="text" name="Emri" placeholder="Name" id="footer-form" style="border:1px solid #f76c6c">
 						<input type="text" name="Email" placeholder="Email" id="footer-form" style="border:1px solid #f76c6c">
-						<button type="button" name="butoni" id="footer-button">SUBMIT</button>
+						<button type="button" name="butoni" id="footer-button"><a href="mailto:costumer-service@bookey.com" style="color: inherit">SUBMIT</a></button>
 				</div>
 				</div>
 				<div class="copyrights" style="margin-bottom:-10px">
