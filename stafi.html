@@ -1,0 +1,194 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Stafi</title>
+<link rel="stylesheet" href="css/stilizimi.css">
+    <link rel="stylesheet" href="ngjarjet.css">
+    
+	<style>
+		body{
+			background-image:url("fotot/ngjarjet.jpg");
+		}
+	</style>
+			
+</head>
+
+<body>
+	<header style="margin:0">
+  <div class="header" style="margin-bottom: 0">
+    <div>
+      <div style="float: left">
+        <h1 class="contominant">CONTOMINANT</h1>
+        <p class="psd">Free PSD website template</p>
+      </div>
+      <div class="icon-band">
+        <ul>
+          <li> <a href="https://www.linkedin.com/"> <img id="image1" class="img-fluid" src="fotot\linkedin-icon-dark.png" onmouseover="setNewImage1();" onmouseout="setOldImage1()" alt=""/> </a> </li>
+          <li> <a href="https://twitter.com/"> <img id="image2" class="img-fluid" src="fotot\twitter-icon-dark.png" onmouseover="setNewImage2()" onmouseout="setOldImage2()" alt=""/> </a> </li>
+          <li> <a href="https://www.pinterest.com/"> <img id="image3" class="img-fluid" src="fotot\pinterest-icon-dark.jpg" onmouseover="setNewImage3();" onmouseout="setOldImage3()"   alt=""/> </a> </li>
+          <li> <a href="https://plus.google.com/"> <img id="image4" class="img-fluid" src="fotot\googleplus-icon-dark.png" onmouseover="setNewImage4()" onmouseout="setOldImage4()" alt=""/> </a> </li>
+        </ul>
+		  <br/>
+        <p style="margin-right:10px"> <a href="#">Sign Up</a> | <a href="#">Log In</a> | <a href="#">RSS Feeds</a> | <a href="#">Archived News</a> </p>
+      </div>
+    </div>
+  </div>
+  <div class="navi">
+	<ul class="navbar">
+	  <li><a href="Projekti.html">BALLINA</a></li>
+	  <li><a href="#">NGJARJET</a></li>
+	  <li><a href="#">GAZETA</a></li>
+	  <li><a href="#">GALLERY</a></li>
+	  <li><div class="dropdown">
+  <div class="dropbtn"><a href="#">KATEGORITE</a></div>
+  <div class="dropdown-content" style="background-color:#3b3a4a;opacity: 0.9;color: black">
+    <a href="Biografi.html" style="color: white">Biografi</a>
+    <a href="shkenca-sociale.html" style="color:  white">Shkenca sociale & psikologjike</a>
+    <a href="shkenca-politike.html" style="color:  white">Shkenca politike</a>
+    <a href="perralla.html" style="color:  white">Përralla</a>
+    <a href="letersi-shqiptare.html" style="color:  white">Letërsi shqiptare</a>
+    <a href="filozofi-dhe-sociologji.html" style="color:  white">Filozofi & socilogji</a>
+    <a href="histori.html" style="color:  white">Histori</a>
+    <a href="ekonomi-dhe-biznes.html" style="color:  white">Ekonomi & biznes</a>
+    <a href="roman.html" style="color:  white">Roman</a>
+    <a href="libra-per-femije.html" style="color:  white">Libra për fëmijë</a>
+    <a href="poezi.html" style="color:  white">Poezi</a>
+    <a href="tregime-dhe-novela.html" style="color:  white">Tregime & novela</a>
+    <a href="libra-religjioz.html" style="color:  white">Libra religjioz</a>
+    <a href="fantazi.html" style="color:  white">Fantazi</a>
+  </div>
+</div></li>
+		<li><div class="dropdown">
+  <div class="dropbtn"><a href="#">TE TJERA</a></div>
+  <div class="dropdown-content" style="background-color:#3b3a4a;opacity: 0.9">
+    <a href="filma.html" style="color: white">Filma të bazuar në libra</a>
+    <a href="gjuhe.html" style="color:  white">Libra në gjuhë të huaja</a>
+  </div>
+</div></li>
+		
+	  <div style="float:right;margin-top:12px;margin-right:20px">
+        <input type="text" name="textfield" id="textfield" placeholder="Search our website...">
+		<button type="button" id="header-button">Search</button>
+		  </div>
+    </ul>
+</header> 
+    <div  style="background-color:lightgray;">
+
+        <h1 style="margin: 20px;font-size: 48px;color:black;">STAFI</h1>
+       <canvas id="canvas" width="900" height="700"  style="border:1px solid black;background-color: blanchedalmond;"></canvas>
+       <script>
+        var canvas = document.getElementById('canvas');
+        var ctx= canvas.getContext('2d');
+
+        function drawRotatedImage(ctx,image,x,y,width,height,rotation){
+            var halfwidth=width/2;
+            var halfHeight=height/2;
+            ctx.save();
+ctx.translate(x + halfwidth,y+halfHeight);
+ctx.rotate(rotation);
+ctx.drawImage(image,-halfwidth,-halfHeight,width,height);
+ctx.restore();
+        }
+
+        function draw(ctx,image){
+            if (!image.complete){
+                setTimeout(function()
+                {
+                    draw(ctx,image);
+                },50);
+                return;
+            }
+            ctx.drawImage(image,20,20,300,160);  
+            drawRotatedImage(ctx,image1,420,20,300,160, Math.PI /4);
+            drawRotatedImage(ctx,image2,220,220,300,160, 0);
+            drawRotatedImage(ctx,image3,620,220,300,160, -Math.PI /4);
+            drawRotatedImage(ctx,image4,20,420,300,160, Math.PI );
+            drawRotatedImage(ctx,image5,420,420,300,160, Math.PI /2);
+    
+        }
+var image= new Image();
+image.src='fotot/foto.jpg';
+var image1= new Image();
+image1.src='fotot/foto1.jpg';
+var image2= new Image();
+image2.src='fotot/foto2.jpg';
+var image3=new Image();
+image3.src='fotot/foto3.jpg';
+var image4=new Image();
+image4.src='fotot/foto4.jpg';
+var image5=new Image();
+image5.src='fotot/foto5.jpg';
+draw(ctx,image);
+
+
+        
+        </script>
+<h2 style="float:right;margin-top:250px;margin-right:60px;color:lightcoral">Keto jane disa nga fotografite e stafit te webfaqes.</br> Stafi eshte i perbere nga 4 vajza . </br>Studente ne Universitetin e Prishtines me saktesisht  </br>"Fakulteti i Inxhinierise Kompjuterike".
+</br>Emrat me llogarite e tyre ne  facebook mund t'i gjeni </br> me poshte:
+<li style="color:lightcoral"><a href="https://www.facebook.com/mihrije16">MIHRIJE KADRIU</li>
+<li style="color:lightcoral"><a href="https://www.facebook.com/margarita.nasufi">MARGARITA NASUFI</a></li>
+<li style="color:lightcoral"><a href="https://www.facebook.com/profile.php?id=100011666623175">MARGARITA DIBRANI</a></li>
+<li style="color: lightcoral"><a href="https://www.facebook.com/lyra.pireva">LYRA PIREVA</a></li>
+
+
+</h2>
+
+
+
+<div class="footer">
+    <div class="inner-footer">
+        <h3>KONTAKTI</h3>
+        <p>Per kontakt me te shpejte me ne klikoni me poshte</p>
+        <p>Tel:<a href="#" style="color:#f76c6c;text-decoration: none;">+38344111111</a><br/>
+        Fax:<a href="#" style="color:#f76c6c;text-decoration: none;">(07) 30367095</a><br/>
+        Email:blejlibra@hotmail.com</p>	
+        <p>Klikoni më poshtë për lokacion .</p>
+<button onclick="getLocation()" type="button" name="butoni" id="footer-button" >Lokacioni</button>
+        <p id="demo"></p>
+<script>
+var x = document.getElementById("demo");
+function getLocation() {
+if (navigator.geolocation) {
+navigator.geolocation.getCurrentPosition(showPosition);
+} else { 
+x.innerHTML = "Geolocation is not supported by this browser.";
+}
+}
+function showPosition(position) {
+x.innerHTML = "Latituda: " + position.coords.latitude + "<br>Longituda: " + position.coords.longitude;
+}
+</script>
+        </div>
+    <div class="inner-footer">
+        <h3>QASJE E SHPEJT&#203</h3>
+        <div class="footer-links"><a href="https://www.biblioteka-ks.org/">Biblioteka Kombe&#235tare</a><br/></div>
+        <div class="footer-links"><a href="https://www.uni-pr.edu/">Universiteti  i Prishtin&#235s</a><br/></div>
+        <div class="footer-links"><a href="http://www.biblioteka-pr.org/sq/Home">Biblioteka Hivzi Sulejmani</a><br/></div>
+        <div class="footer-links"><a href="http://dukagjinigroup.com/project/libraria-dukagjini/">Libraria Dukagjini</a><br/></div>
+    </div>
+    <div class="inner-footer">
+        <h3>NGA NE P&#203R JU :)</h3>
+        
+        <p>
+            Kjo faqe ofron shume mundesi per adhuruesit e librit,ku pervec blerjes dhe leximit online ju mund te ndani eksperiencen tuaj edhe me te tjeret.Kenaqesia juaj ne lexim ,kenaqesia jone ne pune !
+        </p>
+        <p style="text-align:right;"><a href="#" style="text-decoration: none;color:#f76c6c">Read More</a></p>
+    </div>
+    <div class="inner-footer">
+        <h3>SYGJERIME DHE V&#203REJTJE</h3>
+            <input type="text" name="Emri" placeholder="Name" id="footer-form" style="border:1px solid #f76c6c">
+            <input type="text" name="Email" placeholder="Email" id="footer-form" style="border:1px solid #f76c6c">
+            <button type="button" name="butoni" id="footer-button"><a href="mailto:costumer-service@bookey.com" style="color: inherit">SUBMIT</a>
+            </button>
+    </div>
+    </div>
+    <div class="copyrights" style="margin-bottom:-10px">
+        <h3>Copyrights &copy 2020 All Rights Reserved</h3>
+    </div>
+       
+	<script src="jquery-3.4.1.min.js"></script>
+	
+       
+</body>
+</html>
