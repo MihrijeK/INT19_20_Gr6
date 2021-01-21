@@ -1,0 +1,106 @@
+*{
+    margin:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+.cover{
+    position:absolute;
+    width:100%;
+    height:100%;
+    background-size: cover;
+}
+.darker{
+    position:absolute;
+    width:100%;
+    height:100%;
+    background-color: rgba(16,16,26,0.6);
+}
+.form-body{
+    position:absolute;
+    width:30%;
+    height:60%;
+    margin-left:35%;
+    margin-top:10%;
+    border-radius: 20px;
+    background-color: #f2f2f4;
+    box-shadow:0 0 30px 5px #161626;
+}
+.butonat{
+    height:25%;
+}
+button:focus{
+    outline:0;
+}
+#login{
+    margin-left:115px;
+    margin-top:20px;
+    width:100px;
+    height:40px;
+    border-radius:20px;
+    background-color:#f76c6c;
+    border:none;
+    color:white;
+    font-weight:bold;
+    transition:box-shadow 0.3s ease-in;
+}
+#signin{
+    margin-left:20px;
+    width:100px;
+    height:40px;
+    border-radius:20px;
+    background-color: #f76c6c;
+    border:none;
+    color:white;
+    font-weight:bold;
+    transition:box-shadow 0.3s ease-in;
+}
+#login:hover,#signin:hover{
+    box-shadow: 0 0 5px #161626;
+}
+#forma{
+    display:inline-block;
+    width:100%;
+    height:75%;
+    transition: 0.5 ease-in;
+}
+#forma2{
+    display:inline-block;
+    width:100%;
+    height:75%;
+    margin-top:-25px;
+    transition: 0.5 ease-in;
+}
+#user-pass{
+    width:250px;
+    height:50px;
+    outline-style: none;
+    margin:15px auto;
+    margin-left:100px;
+    background-color: #f2f2f4;
+    border:none;
+    border-bottom:1px #f76c6c solid;
+}
+.forma2 #user-pass{
+    margin-top:5px;
+}
+#left,#btn{
+    margin-left:100px;
+    margin-top:10px;
+}
+#btn{
+    margin-top:20px;
+    width:250px;
+    height:50px;
+    border-radius: 10px;
+    border:none;
+    background-color:#f76c6c;
+    color:white;
+    font-size:20px;
+    transition:0.3s ease-in;
+    transition-delay:font-weight 0.1s;
+}
+#btn:hover{
+    box-shadow:0 0 5px #161626;
+    font-weight: bold;
+}
